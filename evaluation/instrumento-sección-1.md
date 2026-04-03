@@ -11,7 +11,7 @@ Instrumento construido con base en A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.
 
 | **Orden** | **Aspecto a evaluar** | **Soporte normativo SGA** | **Atributos observables en la FDS** | **Confiable sin restricciones (5)** | **Confiable con restricciones (3)** | **No confiable (1)** |
 |---|---|---|---|---|---|---|
-| **1.0** | Título: Identificación del producto | A4.3.1 |  (1) una sección numerada o ubicable como: "Sección 1" (2) el título corresponde con: "Identificación de producto" | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ninguno de los dos atributos. |
+| **1.0** | Título: Identificación del producto | A4.3.1 |  (1) una sección numerada o ubicable como: "Sección 1" (2) el título corresponde con: "Identificación del producto" | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ninguno de los dos atributos. |
 
 ---
 
@@ -25,9 +25,9 @@ Instrumento construido con base en A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.
 
 ## **1.2. Otros medios de identificación**
 
-| **Orden** | **Aspecto a evaluar** | **Soporte normativo SGA** | **Atributos observables en la FDS** | **Confiable sin restricciones (5)** | **Confiable con restricciones (3)** | **No confiable (1)** | **No aplica (NA)** |
-|---|---|---|---|---|---|---|---|
-| **1.2** | Otros medios de identificación | A4.3.1.2 | (1) La FDS incluye al menos un identificador adicional al nombre del producto, como código, referencia, número interno, sinónimo u otro identificador único. (2) Cuando la FDS presenta más de un nombre, sinónimo o identificador, la relación entre ellos queda explícita en el propio texto de la FDS. | Se observa el atributo 1 y, cuando corresponde, también el atributo 2. | Se observa el atributo 1, pero no el atributo 2 cuando corresponde. | No se observa el atributo 1 en un caso en que la propia FDS muestra más de un nombre, código, referencia o identificador sin explicitar su relación. | La FDS presenta un único identificador del producto y no evidencia otros nombres, códigos, referencias, números internos o sinónimos aplicables dentro del propio documento. |
+| **Orden** | **Aspecto a evaluar** | **Soporte normativo SGA** | **Atributos observables en la FDS** | **Confiable sin restricciones (5)** | **Confiable con restricciones (3)** | **No confiable (1)** |
+|---|---|---|---|---|---|---|
+| **1.2** | Otros medios de identificación | A4.3.1.2 | (1) La FDS incluye al menos un identificador adicional al nombre del producto, como código, referencia, número interno, sinónimo u otro identificador único. (2) Cuando la FDS presenta más de un nombre, sinónimo o identificador, la relación entre ellos queda explícita en el propio texto de la FDS. | Se observa el atributo 1 y, cuando corresponde, también el atributo 2; o la FDS presenta un único identificador y no evidencia otros medios de identificación dentro del propio documento. | Se observa el atributo 1, pero no el atributo 2 cuando corresponde. | No se observa el atributo 1 en un caso en que la propia FDS muestra más de un nombre, código, referencia o identificador sin explicitar su relación. |
 
 ---
 
@@ -35,7 +35,7 @@ Instrumento construido con base en A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.
 
 | **Orden** | **Aspecto a evaluar** | **Soporte normativo SGA** | **Atributos observables en la FDS** | **Confiable sin restricciones (5)** | **Confiable con restricciones (3)** | **No confiable (1)** |
 |---|---|---|---|---|---|---|
-| **1.3** | Uso recomendado del producto químico y restricciones | A4.3.1.3 | (1) La FDS indica el uso previsto o recomendado del producto. 2) La FDS incluye una descripción de la función, aplicación o finalidad del producto. (3) La FDS consigna restricciones de uso o declara expresamente que no reporta restricciones de uso. | Se observan los atributos 1, 2 y 3. | Se observan uno o dos de los tres atributos. | No se observa ninguno de los tres atributos. |
+| **1.3** | Uso recomendado del producto químico y restricciones | A4.3.1.3 | (1) La FDS indica el uso previsto o recomendado del producto. (2) La FDS incluye una descripción de la función, aplicación o finalidad del producto. (3) La FDS consigna restricciones de uso o declara expresamente que no reporta restricciones de uso. | Se observan los atributos 1, 2 y 3. | Se observan uno o dos de los tres atributos. | No se observa ninguno de los tres atributos. |
 
 ---
 
@@ -64,7 +64,6 @@ La asignación de 5, 3 o 1 se realiza con base en el **número de atributos obse
 - **5**: se observan todos los atributos exigibles del ítem en la FDS.
 - **3**: se observa al menos un atributo exigible del ítem en la FDS, pero no todos.
 - **1**: no se observa ningún atributo exigible del ítem en la FDS.
-- **NA**: el ítem no es exigible porque el propio criterio normativo lo condiciona, y en la FDS no existe evidencia documental que active su evaluación.
 
 ## **Regla complementaria de aplicación**
 Cuando un atributo depende de una condición expresamente visible en la FDS, como que la propia ficha indique que cubre varias variantes o que mencione limitaciones de horario, ese atributo solo se exige si esa condición aparece en la FDS evaluada.
@@ -74,7 +73,7 @@ Cuando un atributo depende de una condición expresamente visible en la FDS, com
 # **Notas de aplicación por ítem**
 
 ## **1.0**
-- Solo se verifica si existe una sección identificable como Sección 1 y si su encabezado contiene términos Identificación del producto.
+- Solo se verifica si existe una sección identificable como Sección 1 y si su encabezado corresponde a “Identificación del producto”.
 
 ## **1.1**
 - No se compara el identificador de la FDS con etiquetas, envases, empaques o versiones físicas del producto.
@@ -83,8 +82,7 @@ Cuando un atributo depende de una condición expresamente visible en la FDS, com
 ## **1.2**
 - Solo se valoran otros medios de identificación cuando están expresamente consignados en la FDS.
 - No debe inferirse la existencia de otros nombres, códigos o sinónimos a partir de fuentes externas.
-- Si la FDS presenta un único identificador y no menciona otros medios de identificación, el ítem se califica como **NA**.
-- El ítem solo se califica con 5, 3 o 1 cuando la propia FDS muestra que existen otros medios de identificación o utiliza más de un nombre, código, referencia o sinónimo.
+- Si la FDS no presenta otros medios de identificación y no existe evidencia interna de que los use, el ítem no debe penalizarse por atributos condicionales no activados.
 
 ## **1.3**
 - Las restricciones de uso solo se evalúan si están expresamente consignadas en la FDS o si la FDS declara que no reporta restricciones.
@@ -104,13 +102,11 @@ Cuando un atributo depende de una condición expresamente visible en la FDS, com
 - **Confiable sin restricciones = 5**
 - **Confiable con restricciones = 3**
 - **No confiable = 1**
-- **No aplica = NA**
 
 # **Criterios de calificación**
 - **Confiable sin restricciones (5):** todos los atributos exigibles del ítem están explícitamente presentes en la FDS.
 - **Confiable con restricciones (3):** al menos un atributo exigible del ítem está explícitamente presente en la FDS, pero no todos.
 - **No confiable (1):** ningún atributo exigible del ítem está explícitamente presente en la FDS.
-- **No aplica (NA):** el ítem no es exigible porque la propia FDS no evidencia condiciones que activen su evaluación.
 
 # **Regla de presencia**
 - **Presente:** existe información explícita del ítem en la FDS.
@@ -120,7 +116,6 @@ Cuando un atributo depende de una condición expresamente visible en la FDS, com
 - **Confiable sin restricciones → Confiable**
 - **Confiable con restricciones → Conf_CR**
 - **No confiable → NO_Conf**
-- **No aplica → NA**
 
 ---
 
@@ -130,13 +125,23 @@ Cuando un atributo depende de una condición expresamente visible en la FDS, com
 |---|---|---|---|---|---|---|---|
 | 1.0 | Presencia e identificación de la sección | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 | 1.1 | Identificador SGA del producto | Sí/No | Sí/No/No corresponde | Sí/No/No corresponde | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 1.2 | Otros medios de identificación | Sí/No/No corresponde | Sí/No/No corresponde | — | 5/3/1/NA | Confiable / Conf_CR / NO_Conf / NA | |
+| 1.2 | Otros medios de identificación | Sí/No/No corresponde | Sí/No/No corresponde | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 | 1.3 | Uso recomendado y restricciones | Sí/No | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 | 1.4 | Datos sobre el proveedor | Sí/No | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 | 1.5 | Número de emergencia | Sí/No | Sí/No | Sí/No/No corresponde | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 
 ---
 
+Presenta una fila resumida  con este en un bloque de texto encabezado exacto, separado por tabulaciones:
+Item_1_0	Calidad_1_0	Item_1_1	Calidad_1_1	Item_1_2	Calidad_1_2	Item_1_3	Calidad_1_3	Item_1_4	Calidad_1_4	Item_1_5	Calidad_1_5
+
+Debajo del encabezado, presenta una única fila de valores usando solo:
+- Presente o No_Presente
+- Confiable, Conf_CR o NO_Conf
+
+Para la fila resumida final, un ítem se reportará como “Presente” cuando exista al menos un atributo exigible explícitamente consignado en la FDS. Los atributos marcados como “No corresponde” no modifican por sí solos la condición de presencia ni el código de calidad.
+
+---
 # **Cálculo del puntaje**
 
 **Puntaje bruto de la sección** = suma de las calificaciones de los ítems evaluados.
@@ -144,8 +149,7 @@ Cuando un atributo depende de una condición expresamente visible en la FDS, com
 **Puntaje porcentual de la sección** =
 
 \[
-\left(\frac{\text{suma de puntajes obtenidos}}{5 \times \text{número de ítems aplicables}}\right)\times 100
+\left(\frac{\text{suma de puntajes obtenidos}}{5 \times \text{número de ítems evaluados}}\right)\times 100
 \]
 
-Los ítems calificados como **NA** se excluyen del denominador.  
 Los atributos marcados como **No corresponde** no se exigen para la decisión del ítem.
