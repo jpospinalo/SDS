@@ -2,10 +2,11 @@
 
 Se debe identificar la sustancia o mezcla e indicar el nombre del proveedor, los usos recomendados e información de contacto del proveedor, incluido un número de teléfono en el que se le pueda localizar en caso de emergencia.
 
+
+##  Instrumento de evaluación de la Sección 1
+
 Instrumento construido con base en A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.4 y A4.3.1.5 del SGA.
 
-
----
 
 ## **1.0. Presencia e identificación de la sección**
 
