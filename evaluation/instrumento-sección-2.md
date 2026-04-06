@@ -2,9 +2,11 @@
 
 Esta sección presenta los peligros de la sustancia o mezcla, los elementos de la etiqueta del SGA y otros peligros no incluidos en la clasificación.
 
+
+# Instrumento de evaluación sección 2.
+
 Instrumento construido con base en **A4.3.2, A4.3.2.1, A4.3.2.1.1, A4.3.2.1.2, A4.3.2.2, A4.3.2.2.1, A4.3.2.2.2 y A4.3.2.3 del SGA**.
 
-## Instrumento de evaluación
 ---
 
 ## 2.0. Presencia e identificación de la sección
