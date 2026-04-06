@@ -1,5 +1,4 @@
-# Instrumento de evaluación de la Sección 2 de la FDS
-## Identificación del peligro o peligros
+# Sección 2. Identificación del peligro o peligros
 
 Esta sección presenta los peligros de la sustancia o mezcla, los elementos de la etiqueta del SGA y otros peligros no incluidos en la clasificación.
 
