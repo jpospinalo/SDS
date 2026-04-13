@@ -4,7 +4,11 @@ Esta sección presenta las propiedades físicas y químicas básicas del product
 
 ## Instrumento de evaluación de la Sección 9
 
-Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.9.4, A4.3.9.5, A4.3.9.6, A4.3.9.7, A4.3.9.8, A4.3.9.9 y Tabla A4.3.9.1 del SGA**.
+Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.9.4, A4.3.9.5, A4.3.9.6, A4.3.9.7, A4.3.9.8, A4.3.9.9 y Tabla A4.3.9.1 del SGA Rev. 6 (2015)**.
+
+Este instrumento cubre los componentes obligatorios de la **Sección 9** previstos en la **Tabla A4.3.9.1**.
+
+En este instrumento, la información suplementaria de las **Tablas A4.3.9.2** y **A4.3.9.3** **no puntúa como obligatoria**. Si aparece en la **Sección 9**, se registra en **Observaciones** y no modifica por sí sola la calificación del ítem.
 
 ---
 
@@ -20,7 +24,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.1 | Estado físico | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **estado físico**. (2) El mismo campo consigna una de las siguientes palabras: **gas**, **líquido**, **sólido** o **solido**; o una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.1 | Estado físico | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **estado físico**. (2) El mismo campo consigna una de las siguientes palabras: **gas**, **líquido**, **sólido** o **solido**. (3) El mismo campo consigna una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -28,7 +32,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.2 | Color | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **color**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.2 | Color | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **color**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -36,7 +40,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.3 | Olor | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **olor**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.3 | Olor | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **olor**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -44,7 +48,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.4 | Punto de fusión / punto de congelación | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **punto de fusión** o **punto de congelación**. (2) El mismo campo contiene: **a)** al menos un número y una unidad de temperatura; o **b)** una de las expresiones literales aceptadas para este ítem definidas en las notas; o **c)** una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.4 | Punto de fusión / punto de congelación | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **punto de fusión** o **punto de congelación**. (2) El mismo campo contiene al menos un número y una unidad de temperatura. (3) El mismo campo contiene una de las expresiones literales aceptadas para este ítem definidas en las notas. (4) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2, 3 o 4, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -52,7 +56,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.5 | Punto de ebullición o punto de ebullición inicial e intervalo de ebullición | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **punto de ebullición**, **punto de ebullición inicial** o **intervalo de ebullición**. (2) El mismo campo contiene: **a)** al menos un número y una unidad de temperatura; o **b)** una de las expresiones literales aceptadas para este ítem definidas en las notas; o **c)** una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.5 | Punto de ebullición o punto de ebullición inicial e intervalo de ebullición | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **punto de ebullición**, **punto de ebullición inicial** o **intervalo de ebullición**. (2) El mismo campo contiene al menos un número y una unidad de temperatura. (3) El mismo campo contiene una de las expresiones literales aceptadas para este ítem definidas en las notas. (4) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2, 3 o 4, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -60,7 +64,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.6 | Inflamabilidad | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **inflamabilidad**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.6 | Inflamabilidad | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **inflamabilidad**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -68,7 +72,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.7 | Límites inferior y superior de explosión/inflamabilidad | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **límite inferior**, **límite superior**, **LIE**, **LSE**, **límite de explosión** o **límite de inflamabilidad**. (2) El mismo campo contiene al menos un número y una unidad o símbolo de concentración; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.7 | Límites inferior y superior de explosión/inflamabilidad | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **límite inferior**, **límite superior**, **LIE**, **LSE**, **límite de explosión** o **límite de inflamabilidad**. (2) El mismo campo contiene al menos un número y una unidad o símbolo de concentración. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -76,7 +80,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.8 | Punto de inflamación | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **punto de inflamación**. (2) El mismo campo contiene al menos un número y una unidad de temperatura; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.8 | Punto de inflamación | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **punto de inflamación**. (2) El mismo campo contiene al menos un número y una unidad de temperatura. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -84,7 +88,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.9 | Temperatura de ignición espontánea | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **temperatura de ignición espontánea**. (2) El mismo campo contiene al menos un número y una unidad de temperatura; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.9 | Temperatura de ignición espontánea | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **temperatura de ignición espontánea**. (2) El mismo campo contiene al menos un número y una unidad de temperatura. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -92,7 +96,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.10 | Temperatura de descomposición | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **temperatura de descomposición** o **TDAA**. (2) El mismo campo contiene: **a)** al menos un número y una unidad de temperatura; o **b)** una de las expresiones literales aceptadas para este ítem definidas en las notas; o **c)** una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.10 | Temperatura de descomposición | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **temperatura de descomposición**, **TDAA** o **SADT**. (2) El mismo campo contiene al menos un número y una unidad de temperatura. (3) El mismo campo contiene una de las expresiones literales aceptadas para este ítem definidas en las notas. (4) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2, 3 o 4, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -100,7 +104,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.11 | pH | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **pH**. (2) El mismo campo contiene al menos un número; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.11 | pH | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **pH**. (2) El mismo campo contiene al menos un número. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -108,7 +112,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.12 | Viscosidad cinemática | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **viscosidad cinemática** o **viscosidad**. (2) El mismo campo contiene: **a)** de forma expresa **cinemática**, y además al menos un número y una unidad de viscosidad cinemática; o **b)** de forma expresa **cinemática**, y además una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.12 | Viscosidad cinemática | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **viscosidad cinemática** o **viscosidad**. (2) El mismo campo contiene de forma expresa **cinemática** y además al menos un número y una unidad de viscosidad cinemática. (3) El mismo campo contiene de forma expresa **cinemática** y además una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -116,7 +120,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.13 | Solubilidad | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **solubilidad**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.13 | Solubilidad | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **solubilidad**. (2) El mismo campo contiene al menos una letra o un número distintos del rótulo del campo, y no consiste solo en un signo aislado ni solo en una referencia a otra sección. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -124,7 +128,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.14 | Coeficiente de reparto n-octanol/agua (valor logarítmico) | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **coeficiente de reparto n-octanol/agua**. (2) El mismo campo contiene al menos un número; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.14 | Coeficiente de reparto n-octanol/agua (valor logarítmico) | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **coeficiente de reparto n-octanol/agua**. (2) El mismo campo contiene al menos un número. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -132,7 +136,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.15 | Presión de vapor | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **presión de vapor**. (2) El mismo campo contiene al menos un número y una unidad de presión; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.15 | Presión de vapor | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **presión de vapor**. (2) El mismo campo contiene al menos un número y una unidad de presión. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -140,7 +144,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.16 | Densidad y/o densidad relativa | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **densidad**, **densidad relativa** o **gravedad específica**. (2) El mismo campo contiene: **a)** al menos un número y una unidad de densidad; o **b)** la expresión **densidad relativa** o **gravedad específica** acompañada de al menos un número; o **c)** una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.16 | Densidad y/o densidad relativa | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **densidad**, **densidad relativa** o **gravedad específica**. (2) El mismo campo contiene al menos un número y una unidad de densidad. (3) El mismo campo contiene la expresión **densidad relativa** o **gravedad específica** acompañada de al menos un número. (4) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2, 3 o 4, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -148,7 +152,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.17 | Densidad de vapor relativa | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **densidad de vapor relativa**. (2) El mismo campo contiene al menos un número; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.17 | Densidad de vapor relativa | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **densidad de vapor relativa**. (2) El mismo campo contiene al menos un número. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -156,7 +160,7 @@ Instrumento construido con base en **A4.3.9, A4.3.9.1, A4.3.9.2, A4.3.9.3, A4.3.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.18 | Características de las partículas | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **características de las partículas** o **tamaño de partícula**. (2) El mismo campo contiene al menos un número y una unidad de tamaño de partícula; o contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.18 | Características de las partículas | **Tabla A4.3.9.1** | (1) La Sección 9 contiene un campo identificable como **características de las partículas** o **tamaño de partícula**. (2) El mismo campo contiene al menos un número y una unidad de tamaño de partícula. (3) El mismo campo contiene una de las expresiones aceptadas de no aplicabilidad o falta de datos definidas en este instrumento. | Se observa el atributo 2 o el atributo 3, y además se observa el atributo 1. | Se observa solo el atributo 1. | No se observa el atributo 1. |
 
 ---
 
@@ -175,9 +179,8 @@ La asignación de **5, 3 o 1** se realiza únicamente con base en **atributos ob
 - Solo se evalúa la información consignada en la **Sección 9** de la FDS.
 - No se permite completar, corregir ni contrastar información con fuentes externas.
 - No se infiere información a partir del producto físico, otras secciones de la FDS o conocimiento técnico del evaluador.
-- Los rótulos y respuestas se evalúan únicamente en **español**.
-- Las propiedades pueden aparecer en tabla, lista o texto corrido.
 - Este instrumento puntúa como ítems obligatorios las propiedades básicas de la **Tabla A4.3.9.1**.
+- No se incorporan exigencias distintas de las previstas en la base normativa declarada para este instrumento.
 - La información suplementaria de las **Tablas A4.3.9.2** y **A4.3.9.3** no se puntúa como ítem obligatorio. Si aparece en la Sección 9, debe registrarse en **Observaciones**.
 - En este instrumento, **campo** significa la misma celda de tabla, la misma línea o el mismo elemento de lista en el que aparece el rótulo de la propiedad y su contenido.
 - Una celda vacía, un guion aislado, una barra inclinada aislada, un punto aislado, una coma aislada o un signo aislado no satisfacen un atributo.
@@ -187,8 +190,8 @@ La asignación de **5, 3 o 1** se realiza únicamente con base en **atributos ob
 # Regla de precedencia
 
 En caso de duda o aparente tensión entre disposiciones del instrumento, se aplicará el siguiente orden:
-1. **Regla de aplicación**
-2. **Tabla del ítem**
+1. **Tabla del ítem**
+2. **Regla de aplicación**
 3. **Nota de aplicación del ítem**
 4. **Formato resumido**
 
@@ -208,10 +211,10 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 
 ## 9.1 a 9.18
 - El atributo 1 se verifica por la presencia del nombre de la propiedad en la propia Sección 9.
-- El atributo 2 se verifica solo dentro del mismo **campo**, según la definición de este instrumento.
-- Si el contenido del campo consiste solo en una referencia a otra sección, el atributo 2 no se observa.
+- El atributo 2, 3 o 4, según corresponda, se verifica solo dentro del mismo **campo**, según la definición de este instrumento.
+- Si el contenido del campo consiste solo en una referencia a otra sección, el atributo de contenido no se observa.
 - Si el contenido del campo consiste solo en una expresión de no aplicabilidad o falta de datos, solo se aceptan las expresiones definidas en este instrumento.
-- Si el contenido del campo consiste solo en texto o números, el atributo 2 se evalúa únicamente con la condición escrita en la tabla del ítem correspondiente.
+- Si el contenido del campo consiste solo en texto o números, el atributo de contenido se evalúa únicamente con la condición escrita en la tabla del ítem correspondiente.
 
 ## 9.4
 - Para este ítem, además del valor numérico con unidad de temperatura, se aceptan solo las siguientes expresiones literales: **se descompone antes de fundir**, **sublima**, **reblandecimiento** y **no se observó fusión hasta** seguida de un valor con unidad de temperatura.
@@ -241,7 +244,7 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 
 ## 9.16
 - Para este ítem, se aceptan como unidades de densidad: **g/cm³**, **g/cm3**, **g/mL**, **g/ml**, **kg/m³**, **kg/m3** y **g/L**.
-- Un valor numérico sin unidad satisface el atributo 2 solo si el mismo campo contiene de forma expresa **densidad relativa** o **gravedad específica**.
+- Un valor numérico sin unidad satisface el atributo 3 solo si el mismo campo contiene de forma expresa **densidad relativa** o **gravedad específica**.
 
 ## 9.18
 - Para este ítem, se aceptan como unidades de tamaño de partícula: **nm**, **µm**, **μm**, **um**, **mm** y **mesh**.
@@ -255,8 +258,8 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 - **No confiable = 1**
 
 # Regla de presencia
-- **Presente**: existe al menos un atributo exigible explícitamente consignado en la FDS.
-- **No_Presente**: no existe ningún atributo exigible explícitamente consignado en la FDS.
+- **Presente**: existe al menos un atributo explícitamente consignado en la FDS.
+- **No_Presente**: no existe ningún atributo explícitamente consignado en la FDS.
 
 # Códigos obligatorios
 - **Confiable sin restricciones → Confiable**
@@ -268,12 +271,12 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 # Instrucciones operativas para aplicación
 
 ## Principio de aplicación
-La evaluación es **documental y literal**. El evaluador no debe decidir si la FDS es técnicamente correcta. El evaluador solo debe decidir si la información requerida está escrita y si satisface los atributos del ítem.
+La evaluación es **documental y literal**. El evaluador no debe decidir si la FDS es técnicamente correcta; solo debe decidir si la información requerida está escrita y cómo está escrita.
 
-## Reglas operativas
+## Reglas operativas para aplicación
 - Evaluar exclusivamente la **Sección 9** de la FDS.
 - No usar información de otras secciones para completar, corregir o inferir datos.
-- Si no es posible identificar de manera documental la **Sección 9**, no se deben evaluar los ítems **9.1 a 9.18** con información tomada de otra sección.
+- Si la FDS no presenta un encabezado escrito como **Sección 9** y además no presenta uno de los encabezados aceptados en el ítem **9.0**, no se deben evaluar los ítems **9.1 a 9.18** con información tomada de otra sección.
 - Para cada atributo marcado como observado, registrar un **fragmento textual literal** que sustente la decisión.
 - Si no existe evidencia textual literal suficiente, el atributo no debe marcarse como observado.
 - En caso de duda entre **5** y **3**, asignar **3**.
@@ -284,27 +287,27 @@ La evaluación es **documental y literal**. El evaluador no debe decidir si la F
 
 # Formato resumido para matriz de evaluación
 
-| Orden | Aspecto | Atributo 1 | Atributo 2 | Calificación | Código de calificación | Observaciones |
-|---|---|---|---|---|---|---|
-| 9.0 | Título de la sección | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.1 | Estado físico | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.2 | Color | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.3 | Olor | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.4 | Punto de fusión / punto de congelación | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.5 | Punto de ebullición o punto de ebullición inicial e intervalo de ebullición | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.6 | Inflamabilidad | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.7 | Límites inferior y superior de explosión/inflamabilidad | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.8 | Punto de inflamación | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.9 | Temperatura de ignición espontánea | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.10 | Temperatura de descomposición | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.11 | pH | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.12 | Viscosidad cinemática | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.13 | Solubilidad | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.14 | Coeficiente de reparto n-octanol/agua (valor logarítmico) | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.15 | Presión de vapor | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.16 | Densidad y/o densidad relativa | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.17 | Densidad de vapor relativa | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 9.18 | Características de las partículas | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| Orden | Aspecto | Atributo 1 | Atributo 2 | Atributo 3 | Atributo 4 | Calificación | Código de calificación | Observaciones |
+|---|---|---|---|---|---|---|---|---|
+| 9.0 | Título de la sección | Sí/No | Sí/No | — | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.1 | Estado físico | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.2 | Color | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.3 | Olor | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.4 | Punto de fusión / punto de congelación | Sí/No | Sí/No | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.5 | Punto de ebullición o punto de ebullición inicial e intervalo de ebullición | Sí/No | Sí/No | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.6 | Inflamabilidad | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.7 | Límites inferior y superior de explosión/inflamabilidad | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.8 | Punto de inflamación | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.9 | Temperatura de ignición espontánea | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.10 | Temperatura de descomposición | Sí/No | Sí/No | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.11 | pH | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.12 | Viscosidad cinemática | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.13 | Solubilidad | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.14 | Coeficiente de reparto n-octanol/agua (valor logarítmico) | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.15 | Presión de vapor | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.16 | Densidad y/o densidad relativa | Sí/No | Sí/No | Sí/No | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.17 | Densidad de vapor relativa | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 9.18 | Características de las partículas | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 
 ---
 
