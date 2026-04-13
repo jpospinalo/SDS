@@ -16,7 +16,7 @@ En este instrumento, la información suplementaria de las **Tablas A4.3.9.2** y 
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 9.0 | Título de la sección | **A4.3.9** | (1) La FDS presenta una sección identificable como **Sección 9**. (2) El encabezado contiene la siguiente expresión:  **Propiedades físicas y químicas y características de seguridad**. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 9.0 | Título de la sección | **A4.3.9** | (1) La FDS presenta una sección identificable como **Sección 9**. (2) El encabezado contiene la expresión: **Propiedades físicas y químicas y características de seguridad**. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
 
 ---
 
