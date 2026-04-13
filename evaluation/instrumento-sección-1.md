@@ -4,7 +4,11 @@ Se debe identificar la sustancia o mezcla e indicar el nombre del proveedor, los
 
 ## Instrumento de evaluación de la Sección 1
 
-Instrumento construido con base en A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.4 y A4.3.1.5 del SGA.
+Instrumento construido con base en **A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.4 y A4.3.1.5 del SGA Rev. 6 (2015)**.
+
+Este instrumento cubre los componentes obligatorios de la **Sección 1** previstos en **A4.3.1.1 a A4.3.1.5**.
+
+En este instrumento, los componentes suplementarios o la información adicional que aparezcan en la **Sección 1** y que no correspondan a los componentes obligatorios anteriores **no puntúan como obligatorios**. Si aparecen, se registran en **Observaciones** y no modifican por sí solos la calificación del ítem.
 
 ---
 
@@ -12,7 +16,7 @@ Instrumento construido con base en A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 1.0 | Título de la sección | A4.3.1 | (1) La FDS presenta una sección identificable como **Sección 1**. (2) El encabezado contiene de manera inequívoca un equivalente de **Identificación del producto**. | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
+| 1.0 | Título de la sección | A4.3.1 | (1) La FDS presenta una sección identificable como **Sección 1**. (2) El encabezado contiene la siguiente expresión: **Identificación del producto** | Se observan los dos atributos. | Se observa solo uno de los dos atributos. | No se observa ningún atributo. |
 
 ---
 
@@ -44,7 +48,7 @@ Instrumento construido con base en A4.3.1, A4.3.1.1, A4.3.1.2, A4.3.1.3, A4.3.1.
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 1.4 | Datos sobre el proveedor | A4.3.1.4 | (1) La FDS incluye el nombre del proveedor. (2) La FDS incluye una dirección o ubicación identificable del proveedor. (3) La FDS incluye al menos un número de teléfono del proveedor. | Se observan los atributos 1, 2 y 3. | Se observan uno o dos de los tres atributos. | No se observa ninguno de los tres atributos. |
+| 1.4 | Datos sobre el proveedor | A4.3.1.4 | (1) La FDS incluye el nombre del proveedor. (2) La FDS incluye al menos uno de los siguientes datos del proveedor: **dirección postal**, **apartado postal**, **ciudad o municipio**, **departamento o estado** o **país**. (3) La FDS incluye al menos un número de teléfono del proveedor. | Se observan los atributos 1, 2 y 3. | Se observan uno o dos de los tres atributos. | No se observa ninguno de los tres atributos. |
 
 ---
 
@@ -66,20 +70,25 @@ La asignación de **5, 3 o 1** se realiza únicamente con base en **atributos ob
 - **3**: se observa al menos un atributo exigible del ítem, pero no todos.
 - **1**: no se observa ningún atributo exigible del ítem.
 
-## Regla de aplicación
+# Regla de aplicación
+
 - Solo se evalúa la información consignada en la **Sección 1** de la FDS.
 - No se permite completar, corregir ni contrastar información con fuentes externas.
 - No se infiere información a partir del producto físico, la etiqueta comercial, otras secciones de la FDS o conocimiento técnico del evaluador.
 - Cuando un atributo depende de una condición previa, solo se exige si esa condición está escrita en la FDS.
+- No se incorporan exigencias distintas de las previstas en la base normativa declarada para este instrumento.
+- No se exige información tomada de otras secciones, salvo que el propio instrumento lo declare de forma explícita.
 
-## Regla de precedencia
+# Regla de precedencia
+
 En caso de duda o aparente tensión entre disposiciones del instrumento, se aplicará el siguiente orden:
-1. **Regla de aplicación general**
-2. **Tabla del ítem**
+1. **Tabla del ítem**
+2. **Regla de aplicación**
 3. **Nota de aplicación del ítem**
-4. **Ejemplos**
+4. **Formato resumido**
 
-## Regla sobre “No corresponde”
+# Regla sobre “No corresponde”
+
 - **No corresponde** se utiliza únicamente cuando la exigibilidad del atributo depende de una condición previa escrita en la propia Sección 1.
 - **No corresponde** no debe usarse cuando la información no se encuentra, cuando la redacción es ambigua o cuando el evaluador no puede confirmar el dato.
 
@@ -90,7 +99,7 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 ## 1.0
 - Solo se evalúa el encabezado de la sección.
 - No se infiere el título a partir del contenido interno.
-- Se aceptan formulaciones equivalentes que permitan identificar de manera inequívoca la función de la sección, siempre que correspondan a **Identificación del producto**.
+- Para el atributo 2, solo se acepta el siguiente encabezado: **Identificación del producto**
 
 ## 1.1
 - No se compara el identificador de la FDS con etiquetas, envases, empaques o versiones físicas del producto.
@@ -107,7 +116,7 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 
 ## 1.4
 - La dirección del proveedor se evalúa solo por su presencia documental en la FDS.
-- Se entiende por **dirección o ubicación identificable** cualquier referencia geográfica o postal consignada en la FDS que permita reconocer al proveedor.
+- Para el atributo 2, solo se aceptan como datos válidos: **dirección postal**, **apartado postal**, **ciudad o municipio**, **departamento o estado** o **país**.
 - No se contrasta con directorios externos, sitios web ni registros comerciales.
 
 ## 1.5
@@ -136,12 +145,12 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 # Instrucciones operativas para aplicación
 
 ## Principio de aplicación
-La evaluación es **documental y literal**. El modelo no debe decidir si la FDS es técnicamente correcta; solo debe decidir si la información requerida está escrita y cómo está escrita.
+La evaluación es **documental y literal**. El evaluador no debe decidir si la FDS es técnicamente correcta; solo debe decidir si la información requerida está escrita y cómo está escrita.
 
-## Reglas operativas para GPT
+## Reglas operativas para aplicación
 - Evaluar exclusivamente la **Sección 1** de la FDS.
 - No usar información de otras secciones para completar, corregir o inferir datos.
-- Si no es posible identificar de manera inequívoca la Sección 1, no se deben evaluar los ítems **1.1 a 1.5** con información tomada de otra sección.
+- Si la FDS no presenta un encabezado escrito como **Sección 1** y además no presenta uno de los encabezados aceptados en el ítem **1.0**, no se deben evaluar los ítems **1.1 a 1.5** con información tomada de otra sección.
 - Para cada atributo marcado como observado, registrar un **fragmento textual literal** que sustente la decisión.
 - Si no existe evidencia textual literal suficiente, el atributo no debe marcarse como observado.
 - En caso de duda entre **5** y **3**, asignar **3**.
@@ -167,4 +176,5 @@ La evaluación es **documental y literal**. El modelo no debe decidir si la FDS 
 # Encabezado para fila resumida en Excel
 
 ```text
-Item_1_0	Calidad_1_0	Item_1_1	Calidad_1_1	Item_1_2	Calidad_1_2	Item_1_3	Calidad_1_3	Item_1_4	Calidad_1_4	Item_1_5	Calidad_1_5
+Item_1_0 Calidad_1_0 Item_1_1 Calidad_1_1 Item_1_2 Calidad_1_2 Item_1_3 Calidad_1_3 Item_1_4 Calidad_1_4 Item_1_5 Calidad_1_5
+```
