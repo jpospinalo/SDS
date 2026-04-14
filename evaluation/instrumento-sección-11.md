@@ -2,8 +2,6 @@
 
 Esta sección presenta la información toxicológica sobre los efectos en la salud, los datos disponibles para identificarlos y, cuando corresponde, la ausencia expresa de datos, la base de los datos toxicológicos y la aplicabilidad de esos datos a la sustancia o mezcla.
 
----
-
 ## Instrumento de evaluación de la Sección 11
 
 Instrumento construido con base en **A4.3.11, A4.3.11.1, A4.3.11.5, A4.3.11.6, A4.3.11.7, A4.3.11.8, A4.3.11.9, A4.3.11.10, A4.3.11.12 y A4.3.11.13 del SGA Rev. 6 (2015)**.
@@ -130,7 +128,7 @@ En este instrumento, **no puntúan como obligatorios** los componentes cuya veri
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 11.5 | Medidas numéricas de toxicidad | **A4.3.11.10** | (1) La Sección 11 contiene al menos una de las siguientes expresiones: **LD50**, **LC50**, **ATE**, **ETA**, **NOAEL** o **LOAEL**. (2) La misma línea, celda o bloque de texto contiene al menos un número. (3) La misma línea, celda o bloque de texto contiene una **unidad**, una **ruta de exposición** o una **condición de exposición**. (4) La misma línea, celda o bloque de texto contiene un **período**, una **duración** o una **condición temporal de exposición**. | Se observan los cuatro atributos. | Se observan uno, dos o tres de los cuatro atributos. | No se observa ningún atributo. |
+| 11.5 | Medidas numéricas de toxicidad | **A4.3.11.10** | (1) La Sección 11 contiene al menos una de las siguientes expresiones: **LD50**, **LC50**, **ATE**, **ETA**, **NOAEL** o **LOAEL**. (2) La misma línea, celda o bloque de texto contiene al menos un número. (3) La misma línea, celda o bloque de texto contiene una **unidad**. (4) La misma línea, celda o bloque de texto contiene una **ruta de exposición** o una **condición de exposición**. (5) La misma línea, celda o bloque de texto contiene un **período**, una **duración** o una **condición temporal de exposición**. | Se observan los cinco atributos. | Se observan uno, dos, tres o cuatro de los cinco atributos. | No se observa ningún atributo. |
 
 ---
 
@@ -145,16 +143,12 @@ En este instrumento, **no puntúan como obligatorios** los componentes cuya veri
 # Regla de calificación
 
 ## Criterio general
-
 La asignación de **5, 3 o 1** se realiza únicamente con base en **atributos observables en la propia Sección 11 de la FDS**.
 
 ## Regla operativa
-
 - **5**: se observan todos los atributos exigibles del ítem.
 - **3**: se observa al menos un atributo exigible del ítem, pero no todos.
 - **1**: no se observa ningún atributo exigible del ítem.
-
----
 
 # Regla de aplicación
 
@@ -167,20 +161,15 @@ La asignación de **5, 3 o 1** se realiza únicamente con base en **atributos ob
 - En este instrumento, una referencia aislada a otra sección, por ejemplo **ver Sección 2**, **ver Sección 3** o **ver Sección 4**, no satisface por sí sola un atributo de contenido de la Sección 11.
 - En este instrumento, un campo vacío, un guion aislado, una barra inclinada aislada, un punto aislado, una coma aislada o un signo aislado no satisfacen un atributo.
 
----
-
 # Regla de precedencia
 
 En caso de duda o aparente tensión entre disposiciones del instrumento, se aplicará el siguiente orden:
-
 1. **Tabla del ítem**
 2. **Regla de aplicación**
 3. **Nota de aplicación del ítem**
 4. **Formato resumido**
 
----
-
-# Regla sobre "No corresponde"
+# Regla sobre “No corresponde”
 
 - **No corresponde** se utiliza únicamente cuando la exigibilidad del atributo depende de una condición previa escrita en la propia Sección 11.
 - **No corresponde** no debe usarse cuando la información no se encuentra, cuando la redacción es ambigua o cuando el evaluador no puede confirmar el dato.
@@ -192,83 +181,67 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 # Notas de aplicación por ítem
 
 ## 11.0
-
 - Solo se evalúa el encabezado de la sección.
 - No se infiere el título a partir del contenido interno.
 - Para el atributo 2, solo se acepta la expresión **Información toxicológica**.
 
 ## 11.1.1 a 11.1.10
-
 - El atributo 2 no se satisface cuando el campo contiene solo una referencia a otra sección.
 - El atributo 2 no se satisface cuando el campo contiene solo una de las siguientes expresiones: **no aplicable**, **no pertinente**, **tóxico**, **seguro si se usa bien** o un espacio en blanco.
 - El atributo 3 solo se satisface con una de las siguientes expresiones: **sin datos disponibles**, **datos no disponibles**, **no hay datos**, **no se dispone de datos**, **no clasificado**, **no se clasifica** o **no cumple criterios**.
 
 ## 11.1.1
-
 - Para el atributo 1, solo se acepta la expresión **toxicidad aguda**.
 
 ## 11.1.2
-
 - Para el atributo 1, solo se aceptan las expresiones **corrosión cutánea**, **irritación cutánea** o **corrosión/irritación cutáneas**.
 
 ## 11.1.3
-
 - Para el atributo 1, solo se aceptan las expresiones **lesiones oculares graves**, **irritación ocular** o **lesiones oculares graves/irritación ocular**.
 
 ## 11.1.4
-
 - Para el atributo 1, solo se aceptan las expresiones **sensibilización respiratoria**, **sensibilización cutánea** o **sensibilización respiratoria o cutánea**.
 
 ## 11.1.5
-
 - Para el atributo 1, solo se aceptan las expresiones **mutagenicidad en células germinales** o **mutagenicidad**.
 
 ## 11.1.6
-
 - Para el atributo 1, solo se acepta la expresión **carcinogenicidad**.
 
 ## 11.1.7
-
 - Para el atributo 1, solo se aceptan las expresiones **toxicidad para la reproducción** o **toxicidad reproductiva**.
 
 ## 11.1.8
-
 - Para el atributo 1, solo se aceptan las expresiones **toxicidad sistémica específica de órganos diana – exposición única**, **toxicidad específica en determinados órganos – exposición única** o **STOT exposición única**.
 
 ## 11.1.9
-
 - Para el atributo 1, solo se aceptan las expresiones **toxicidad sistémica específica de órganos diana – exposiciones repetidas**, **toxicidad específica en determinados órganos – exposiciones repetidas** o **STOT exposiciones repetidas**.
 
 ## 11.1.10
-
 - Para el atributo 1, solo se aceptan las expresiones **peligro por aspiración** o **toxicidad por aspiración**.
 
 ## 11.2
-
 - Para el atributo 2, solo se aceptan las expresiones **ingestión** u **oral**.
 - Para el atributo 3, solo se aceptan las expresiones **inhalación** o **inhalatoria**.
 - Para el atributo 4, solo se aceptan las expresiones **cutánea**, **dérmica** o **contacto cutáneo**.
 - Para el atributo 5, solo se aceptan las expresiones **ocular** o **contacto ocular**.
 
 ## 11.3
-
 - El atributo 2 no se satisface cuando el campo o bloque contiene solo una referencia a otra sección, un signo aislado o una de las expresiones no aceptadas definidas en este instrumento.
 - El atributo 3 solo se satisface con una de las siguientes expresiones: **grave**, **severo**, **desmayo**, **pérdida de conciencia**, **coma**, **muerte**, **con resultado de** o **puede progresar**.
 
 ## 11.4
-
 - Para el atributo 1, solo se aceptan las expresiones **inmediato**, **inmediatos**, **agudo**, **agudos**, **a corto plazo** o **exposición breve**.
 - Para el atributo 2, solo se aceptan las expresiones **retardado**, **retardados**, **diferido**, **diferidos**, **demorado**, **demorados** o **posterior**.
 - Para el atributo 3, solo se aceptan las expresiones **crónico**, **crónicos**, **a largo plazo**, **prolongado**, **prolongados** o **exposición repetida**.
 
 ## 11.5
-
 - Para el atributo 1, solo se aceptan las expresiones **LD50**, **LC50**, **ATE**, **ETA**, **NOAEL** o **LOAEL**.
-- Para el atributo 3, se aceptan unidades como **mg/kg**, **mg/L**, **ppm**, **mg/m³**, así como rutas o condiciones como **oral**, **dérmica**, **inhalación**, **4 h** o **24 h**.
-- El atributo 4 se satisface cuando la misma línea, celda o bloque contiene una duración o período de exposición como **4 h**, **24 h**, **8 h**, **14 días**, **28 días** o **90 días**.
+- Para el atributo 3, se aceptan unidades como **mg/kg**, **mg/L**, **ppm**, **mg/m³**.
+- Para el atributo 4, se aceptan rutas o condiciones como **oral**, **dérmica**, **inhalación**, **4 h** o **24 h**.
+- El atributo 5 se satisface cuando la misma línea, celda o bloque contiene una duración o período de exposición como **4 h**, **24 h**, **8 h**, **14 días**, **28 días** o **90 días**.
 
 ## 11.6
-
 - El atributo 1 solo se satisface con expresiones como **datos en humanos** o **estudios en humanos**.
 - El atributo 2 solo se satisface con expresiones como **datos en animales** o **estudios en animales**.
 - El atributo 3 solo se exige cuando la propia Sección 11 indica datos en animales.
@@ -279,22 +252,15 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 ---
 
 # Escala de calificación
-
 - **Confiable sin restricciones = 5**
 - **Confiable con restricciones = 3**
 - **No confiable = 1**
 
----
-
 # Regla de presencia
-
 - **Presente**: existe al menos un atributo observable del ítem en la FDS.
 - **No_Presente**: no existe ningún atributo observable del ítem en la FDS.
 
----
-
 # Códigos obligatorios
-
 - **Confiable sin restricciones → Confiable**
 - **Confiable con restricciones → Conf_CR**
 - **No confiable → NO_Conf**
@@ -304,11 +270,9 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 # Instrucciones operativas para aplicación
 
 ## Principio de aplicación
-
 La evaluación es **documental y literal**. El evaluador no debe decidir si la FDS es técnicamente correcta. El evaluador solo debe decidir si la información requerida está escrita y si satisface los atributos del ítem.
 
 ## Reglas operativas para aplicación
-
 - Evaluar exclusivamente la **Sección 11** de la FDS.
 - No usar información de otras secciones para completar, corregir o inferir datos.
 - Si la FDS no presenta un encabezado escrito como **Sección 11** y además no presenta uno de los encabezados aceptados en el ítem **11.0**, no se deben evaluar los ítems **11.1.1 a 11.6** con información tomada de otra sección.
@@ -338,7 +302,7 @@ La evaluación es **documental y literal**. El evaluador no debe decidir si la F
 | 11.2 | Posibles vías de exposición | Sí/No | Sí/No | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 | 11.3 | Síntomas relacionados con las características de la sustancia o mezcla | Sí/No | Sí/No | Sí/No | — | — | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 | 11.4 | Efectos inmediatos, retardados y crónicos | Sí/No | Sí/No | Sí/No | — | — | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
-| 11.5 | Medidas numéricas de toxicidad | Sí/No | Sí/No | Sí/No | Sí/No | — | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
+| 11.5 | Medidas numéricas de toxicidad | Sí/No | Sí/No | Sí/No | Sí/No | Sí/No | — | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 | 11.6 | Base y aplicabilidad de los datos toxicológicos | Sí/No | Sí/No | Sí/No/No corresponde | Sí/No | Sí/No/No corresponde | Sí/No | 5/3/1 | Confiable / Conf_CR / NO_Conf | |
 
 ---
@@ -347,4 +311,3 @@ La evaluación es **documental y literal**. El evaluador no debe decidir si la F
 
 ```text
 Item_11_0 Calidad_11_0 Item_11_1_1 Calidad_11_1_1 Item_11_1_2 Calidad_11_1_2 Item_11_1_3 Calidad_11_1_3 Item_11_1_4 Calidad_11_1_4 Item_11_1_5 Calidad_11_1_5 Item_11_1_6 Calidad_11_1_6 Item_11_1_7 Calidad_11_1_7 Item_11_1_8 Calidad_11_1_8 Item_11_1_9 Calidad_11_1_9 Item_11_1_10 Calidad_11_1_10 Item_11_2 Calidad_11_2 Item_11_3 Calidad_11_3 Item_11_4 Calidad_11_4 Item_11_5 Calidad_11_5 Item_11_6 Calidad_11_6
-```
