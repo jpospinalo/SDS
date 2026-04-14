@@ -132,15 +132,6 @@ En este instrumento, **no puntúan como obligatorios** los componentes cuya veri
 
 ---
 
-## 11.6. Base y aplicabilidad de los datos toxicológicos
-
-| Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
-|---|---|---|---|---|---|---|
-| 11.6 | Base y aplicabilidad de los datos toxicológicos | **A4.3.11.4, A4.3.11.9, A4.3.11.12 y A4.3.11.13** | (1) La Sección 11 indica que los datos toxicológicos se basan en **seres humanos**. (2) La Sección 11 indica que los datos toxicológicos se basan en **animales**. (3) Si la Sección 11 indica datos en animales, identifica al menos una de las siguientes especies: **rata**, **ratón**, **conejo**, **cobayo**, **perro** o **mono**. (4) La Sección 11 declara expresamente **sin datos específicos de la mezcla**, **no se dispone de datos específicos**, **no hay datos específicos** o **datos no disponibles para la mezcla**. (5) Si la Sección 11 declara ausencia de datos específicos, indica también **datos de componentes**, **datos de la clase de productos químicos** o **datos genéricos** como base de la información. (6) La Sección 11 declara expresamente que **la mezcla no ha sido ensayada en su totalidad**, **la mezcla no fue ensayada en conjunto** o **la mezcla no se ensayó como un todo**. | Se observa al menos uno de los atributos **1, 2, 4 o 6** y, cuando corresponde, también se observa el atributo **3** o el atributo **5**. | Se observa el atributo **2** sin el atributo **3**, o se observa el atributo **4** sin el atributo **5**. | No se observa ninguno de los atributos **1, 2, 4 o 6**. |
-
-
----
-
 # Regla de calificación
 
 ## Criterio general
@@ -243,14 +234,6 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 - Para el atributo 5, se aceptan condiciones de exposición como **vapores**, **vapor**, **aerosol**, **niebla** o **polvo**.
 - El atributo 6 se satisface cuando la misma línea, celda o bloque contiene una duración de exposición como **4 h**, **24 h**, **8 h**, **14 días**, **28 días** o **90 días**.
 
-## Nota de aplicación del ítem 11.6
-- En este ítem, los atributos **1, 2, 4 y 6** son **atributos de declaración independiente**.
-- El atributo **3** solo es exigible cuando se observa el atributo **2**.
-- El atributo **5** solo es exigible cuando se observa el atributo **4**.
-- La observación del atributo **1** no hace exigibles los atributos **2, 4 o 6**.
-- La observación del atributo **2** no hace exigibles los atributos **1, 4 o 6**.
-- La observación del atributo **4** no hace exigibles los atributos **1, 2 o 6**.
-- La observación del atributo **6** no hace exigibles los atributos **1, 2 o 4**.
 
 ---
 
