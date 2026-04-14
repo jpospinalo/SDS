@@ -128,7 +128,7 @@ En este instrumento, **no puntúan como obligatorios** los componentes cuya veri
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 11.5 | Medidas numéricas de toxicidad | **A4.3.11.10** | (1) La Sección 11 contiene al menos una de las siguientes expresiones: **LD50**, **LC50**, **ATE**, **ETA**, **NOAEL** o **LOAEL**. (2) La misma línea, celda o bloque de texto contiene al menos un número. (3) La misma línea, celda o bloque de texto contiene una **unidad**. (4) La misma línea, celda o bloque de texto contiene una **ruta de exposición**. (5) La misma línea, celda o bloque de texto contiene una **condición de exposición**. (6) La misma línea, celda o bloque de texto contiene un **período**, una **duración** o una **condición temporal de exposición**. | Se observan los atributos 1, 2, 3 y 6, y además se observa el atributo 4 o el atributo 5. | Se observa al menos uno de los atributos, pero no todos los atributos exigibles del ítem. | No se observa ningún atributo. |
+| 11.5 | Medidas numéricas de toxicidad | **A4.3.11.10** | (1) La Sección 11 contiene al menos una de las siguientes expresiones: **LD50**, **LC50**, **ATE**, **ETA**, **NOAEL** o **LOAEL**. (2) La misma línea, celda o bloque de texto contiene al menos un número. (3) La misma línea, celda o bloque de texto contiene una **unidad**. (4) La misma línea, celda o bloque de texto contiene una **ruta de exposición**. (5) La misma línea, celda o bloque de texto contiene una **condición de exposición**. (6) La misma línea, celda o bloque de texto contiene una **duración de exposición**. | Se observan los atributos 1, 2, 3 y 6, y además se observa el atributo 4 o el atributo 5. | Se observa al menos uno de los atributos, pero no todos los atributos exigibles del ítem. | No se observa ningún atributo. |
 
 ---
 
@@ -240,7 +240,7 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 - Para el atributo 3, se aceptan unidades como **mg/kg**, **mg/L**, **ppm**, **mg/m³**.
 - Para el atributo 4, se aceptan rutas de exposición como **oral**, **dérmica** o **inhalación**.
 - Para el atributo 5, se aceptan condiciones de exposición como **vapores**, **vapor**, **aerosol**, **niebla** o **polvo**.
-- El atributo 6 se satisface cuando la misma línea, celda o bloque contiene una duración o período de exposición como **4 h**, **24 h**, **8 h**, **14 días**, **28 días** o **90 días**.
+- El atributo 6 se satisface cuando la misma línea, celda o bloque contiene una duración de exposición como **4 h**, **24 h**, **8 h**, **14 días**, **28 días** o **90 días**.
 
 ## 11.6
 - El atributo 1 solo se satisface con expresiones como **datos en humanos** o **estudios en humanos**.
