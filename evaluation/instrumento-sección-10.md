@@ -24,7 +24,7 @@ En este instrumento, los componentes suplementarios o la información adicional 
 
 | Orden | Aspecto a evaluar | Soporte normativo SGA | Atributos observables en la FDS | Confiable sin restricciones (5) | Confiable con restricciones (3) | No confiable (1) |
 |---|---|---|---|---|---|---|
-| 10.1 | Reactividad | **A4.3.10.1, A4.3.10.1.1 y A4.3.10.1.2** | (1) La FDS consigna una declaración sobre la **reactividad** del producto. (2) La FDS consigna una declaración sobre la **ausencia de peligros de reactividad**. (3) Si la FDS describe reactividad, identifica en el mismo renglón, celda o bloque de texto al menos uno de los siguientes soportes: **dato de ensayo del producto**, **dato de componentes**, **dato genérico de clase o familia**, **sustancia específica con la que reacciona** o **clase de sustancias con la que reacciona**. (4) Si la FDS declara expresamente que no dispone de datos específicos de la mezcla, consigna también en el mismo renglón, celda o bloque de texto **componentes** o **clase/familia** como base de la información. | Se observa el atributo 1 o el atributo 2 y, cuando corresponde, también los atributos 3 y 4. | Se observa el atributo 1 o el atributo 2, pero no todos los atributos exigibles adicionales. | No se observa el atributo 1 ni el atributo 2. |
+| 10.1 | Reactividad | **A4.3.10.1, A4.3.10.1.1 y A4.3.10.1.2** | (1) La FDS consigna una declaración sobre la **reactividad** del producto. (2) La FDS consigna una declaración sobre la **ausencia de peligros de reactividad**. (3) Si la FDS consigna una declaración sobre la reactividad, identifica en el mismo renglón, celda o bloque de texto al menos uno de los siguientes soportes: **dato de ensayo del producto**, **dato de componentes**, **dato genérico de clase o familia**, **sustancia específica con la que reacciona** o **clase de sustancias con la que reacciona**. (4) Si la FDS declara expresamente que no dispone de datos específicos de la mezcla, consigna también en el mismo renglón, celda o bloque de texto **componentes** o **clase/familia** como base de la información. | Se observa el atributo 1 o el atributo 2 y, cuando corresponde, también los atributos 3 y 4. | Se observa el atributo 1 o el atributo 2, pero no todos los atributos exigibles adicionales. | No se observa el atributo 1 ni el atributo 2. |
 
 ---
 
@@ -112,7 +112,7 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 - Para el atributo 2, solo se aceptan las siguientes expresiones: **Estabilidad y reactividad** o **Reactividad y estabilidad**.
 
 ## 10.1
-- Este ítem evalúa la **declaración general de reactividad** o de **ausencia de peligros de reactividad**.
+- Este ítem evalúa la **declaración general de reactividad** o la **declaración de ausencia de peligros de reactividad**.
 - El atributo 1 se satisface con expresiones literales como **reactivo**, **puede reaccionar con** o **reacciona con**.
 - El atributo 2 se satisface con expresiones literales como **no reactivo**, **sin peligros de reactividad conocidos** o **no presenta peligros de reactividad**.
 - La palabra **estable** por sí sola no satisface los atributos 1 ni 2; esa información corresponde al ítem **10.2**.
@@ -145,15 +145,15 @@ En caso de duda o aparente tensión entre disposiciones del instrumento, se apli
 
 ## 10.5
 - Este ítem evalúa la **enumeración de sustancias específicas o clases de productos químicos incompatibles**.
-- Para el atributo 1, se aceptan expresiones de clase como **oxidantes**, **ácidos**, **bases**, **reductores**, **agentes oxidantes** o **metales**.
-- Para el atributo 2, se aceptan nombres de sustancias específicas como **agua**, **ácido nítrico**, **hipoclorito de sodio** o cualquier nombre químico individualizable consignado en la FDS.
+- Para el atributo 1, solo se aceptan las siguientes expresiones de clase: **oxidantes**, **ácidos**, **bases**, **reductores**, **agentes oxidantes** y **metales**.
+- Para el atributo 2, solo se aceptan nombres de sustancias específicas como **agua**, **ácido nítrico**, **hipoclorito de sodio** o cualquier nombre químico individualizable consignado en la FDS.
 - La sola enumeración de condiciones físicas, por ejemplo **calor** o **humedad**, no satisface este ítem; esa información corresponde al ítem **10.4**.
 - La sola enumeración de productos de descomposición no satisface este ítem; esa información corresponde al ítem **10.6**.
 - Para el atributo 5, solo se aceptan las siguientes consecuencias: **explosión**, **liberación de gases tóxicos**, **liberación de gases inflamables**, **liberación de calor** y **reacción violenta**.
 
 ## 10.6
 - Este ítem evalúa la **enumeración de productos de descomposición peligrosos**.
-- Para el atributo 1, se aceptan nombres como **monóxido de carbono**, **dióxido de carbono**, **óxidos de nitrógeno**, **óxidos de azufre**, **humos tóxicos** o cualquier producto de descomposición individualizable consignado en la FDS.
+- Para el atributo 1, solo se aceptan nombres como **monóxido de carbono**, **dióxido de carbono**, **óxidos de nitrógeno**, **óxidos de azufre**, **humos tóxicos** o cualquier producto de descomposición individualizable consignado en la FDS.
 - La sola mención de **productos de combustión** sin individualización satisface solo el atributo 6.
 - La sola remisión a la **Sección 5** satisface solo el atributo 6.
 - Para el atributo 5, solo se aceptan los siguientes contextos de generación: **uso**, **almacenamiento**, **calentamiento** y **descomposición térmica**.
@@ -211,4 +211,3 @@ La evaluación es **documental y literal**. El evaluador no debe decidir si la F
 
 ```text
 Item_10_0 Calidad_10_0 Item_10_1 Calidad_10_1 Item_10_2 Calidad_10_2 Item_10_3 Calidad_10_3 Item_10_4 Calidad_10_4 Item_10_5 Calidad_10_5 Item_10_6 Calidad_10_6
-```
