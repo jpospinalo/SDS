@@ -1,4 +1,5 @@
-# Versiones con las que se produjeron los resultados publicados.
+# Versiones del entorno de referencia de los resultados congelados.
+# Requiere Python >= 3.11 (entorno de referencia: 3.13). pandas 3.0.1 no se instala en 3.10.
 # Tomadas del entorno .venv del repositorio (Python 3.13).
 # La reproduccion de data/processed/eval.csv desde data/raw/eval.csv se verifico tambien con
 # pandas 2.3.3 y 3.0.2 (mismo SHA-256), asi que estos pines no son un requisito estricto.
@@ -9,6 +10,9 @@ scipy==1.17.0
 scikit-learn==1.8.0
 matplotlib==3.10.8
 seaborn==0.13.2
+# Solo para src/analisis_congelado.py (resultados congelados)
+scikit-posthocs==0.17.0
+diptest==0.11.0
 # openpyxl y krippendorff NO estan en el .venv original: su version de referencia no se registro.
 # Solo para abrir los .xlsx de data/raw/
 openpyxl
