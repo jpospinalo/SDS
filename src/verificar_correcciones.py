@@ -8,7 +8,8 @@ Comprueba, sin escribir nada:
   2. Que las diferencias entre data/raw y data/processed son exactamente las
      27 del registro: 26 de presencia y 1 de calidad.
   3. Que no queda ninguna decision AUSENTE + calidad positiva fuera de S3.
-  4. Que la matriz reproduce los resultados publicados por seccion y globales.
+  4. Que la matriz reproduce los resultados de r2_limpio por seccion y globales (Tabla 3 y texto).
+  4b. Que reproduce las Tablas 1, 2 y 4 y la dispersion del puntaje global.
   5. Que las codificaciones externas son las declaradas (y las plantillas estan vacias) y que la
      concordancia se reproduce desde ellas.
   6. Que preprocessing.ipynb regenera la matriz desde el crudo bit a bit.
@@ -95,7 +96,7 @@ def main():
     check(len(fuera) == 0, 'ninguna ausencia con calidad positiva fuera de S3', str(len(fuera)))
     check(len(dentro) == 29, 'las 29 excepciones de S3 se conservan', str(len(dentro)))
 
-    print('\n4. Resultados publicados')
+    print('\n4. Resultados reportados en r2_limpio (Tabla 3 y texto)')
     sec = defaultdict(lambda: defaultdict(list))
     punt = []
     for r in filas:
@@ -124,6 +125,55 @@ def main():
     cfg = {tuple((r[c] or '').strip() + '|' + (r.get('CALIDAD_' + c[5:]) or '').strip()
                  for c in r if c.startswith('ITEM_')) for r in filas}
     check(len(cfg) == 24, 'hay 24 configuraciones distintas', str(len(cfg)))
+
+    print('\n4b. Tablas 1, 2 y 4 y cifras del texto de r2_limpio')
+    import statistics
+    cab = [c for c in filas[0] if c.startswith('ITEM_')]
+    n_sec = Counter(int(c[5:].split('_')[0]) for c in cab)
+    esperado_sec = {1: 6, 2: 7, 3: 9, 4: 4, 5: 4, 6: 4, 7: 3, 8: 4, 9: 2, 10: 7, 11: 6, 12: 6, 13: 2, 14: 7, 15: 2, 16: 2}
+    check(dict(n_sec) == esperado_sec and len(cab) == 75, 'Tabla 1: 75 items repartidos como en r2_limpio por seccion',
+          str(dict(n_sec)) if dict(n_sec) != esperado_sec else '')
+    dom = {'G1': range(1, 4), 'G2': range(4, 7), 'G3': range(7, 9), 'G4': range(9, 13), 'G5': range(13, 17)}
+    esperado_dom = {'G1': 22, 'G2': 12, 'G3': 7, 'G4': 21, 'G5': 13}
+    got_dom = {g: sum(n_sec[s] for s in r) for g, r in dom.items()}
+    check(got_dom == esperado_dom, 'Tabla 1: items por dominio G1 22, G2 12, G3 7, G4 21, G5 13', str(got_dom) if got_dom != esperado_dom else '')
+
+    t2 = Counter((r['FABRICANTE'].strip(), r['USO'].strip()) for r in filas)
+    esperado_t2 = {('F01', 'INDUSTRIAL'): 5, ('F02', 'DOMESTICA'): 5, ('F03', 'INDUSTRIAL'): 5, ('F03', 'DOMESTICA'): 5,
+                   ('F04', 'INDUSTRIAL'): 5, ('F05', 'INDUSTRIAL'): 5, ('F06', 'INDUSTRIAL'): 5, ('F06', 'DOMESTICA'): 5,
+                   ('F07', 'DOMESTICA'): 5, ('F08', 'DOMESTICA'): 5}
+    check(dict(t2) == esperado_t2 and sum(t2.values()) == 50, 'Tabla 2: FDS por fabricante y uso (25 industrial, 25 domestico)',
+          '' if dict(t2) == esperado_t2 else str(sorted(t2.items())))
+
+    def item_stats(col):
+        v = []
+        for r in filas:
+            p_ = (r.get('ITEM_' + col) or '').strip(); q_ = (r.get('CALIDAD_' + col) or '').strip()
+            if p_ == 'NO_APLICA' or q_ == 'NO_APLICA' or (not p_ and not q_):
+                continue
+            v.append((p_ == 'PRESENTE', QV.get(q_, 0.0)))
+        if not v:
+            return None, None
+        return 100 * sum(x[0] for x in v) / len(v), sum(x[1] for x in v) / len(v)
+    # item del manuscrito -> (completitud %, calidad pts); None = el manuscrito no lo reporta
+    T4 = {'1.2': (48, 34), '2.2': (86, 57), '3.2.1.1': (10, 17), '4.2': (None, 27), '4.3': (None, 32),
+          '5.3': (60, 58), '6.2': (66, 36), '7.2': (64, 63), '8.1': (100, 48), '8.2': (64, 27),
+          '9.1': (100, 77), '10.2.1': (62, 32), '11.1': (28, 17), '12.2': (54, 33), '13.1': (80, 50),
+          '14.6': (48, 48), '15.1': (98, 19), '16.1': (100, 45),
+          '2.1': (64, None), '2.1.1': (66, None), '2.1.2': (64, None), '2.1.3': (66, None), '2.1.4': (64, None)}
+    malos = []
+    for it, (c_pub, q_pub) in T4.items():
+        c_, q_ = item_stats(it.replace('.', '_'))
+        if c_ is None or (c_pub is not None and int(round(c_)) != c_pub) or (q_pub is not None and int(round(q_)) != q_pub):
+            malos.append(f'{it}: {c_ if c_ is None else round(c_, 1)}/{q_ if q_ is None else round(q_, 1)} vs {c_pub}/{q_pub}')
+    check(not malos, 'Tabla 4: los 23 valores de items citados coinciden con la matriz', '; '.join(malos))
+    cal12 = [item_stats(c[5:])[1] for c in cab if c.startswith('ITEM_12_')]
+    check(len(cal12) == 6 and sum(33 <= round(x) <= 54 for x in cal12) == 5,
+          'Tabla 4: cinco items de S12 con calidad entre 33 y 54', str([round(x) for x in cal12]))
+    sd = statistics.stdev(punt)
+    check(round(sd, 1) == 21.6 and round(min(punt), 1) == 28.0 and round(max(punt), 1) == 92.2,
+          'texto: DE 21,6, minimo 28,0 y maximo 92,2 del puntaje global por FDS',
+          f'DE {sd:.4f}, min {min(punt):.1f}, max {max(punt):.1f}')
 
     print('\n5. Codificaciones externas')
     EXT = {'eval_1.csv': ('d69c39637bd965700c3924924fe901866b2f1976cc2f2c33b5b8bc97c655dcb7', 823),
@@ -158,7 +208,7 @@ def main():
     ok_k = len(pares) == 6 and all(a == c and k == p for a, k, c, p in pares)
     ok_a = len(alfas) == 2 and all(f'{float(x):.3f}' == y for x, y in alfas)
     check(rc.returncode == 0 and ok_k and ok_a,
-          'la concordancia externa se reproduce desde data/external/ (Tabla 5: 6 acuerdos, 6 kappas, 2 alfas)',
+          'Tabla 5 de r2_limpio: 3 acuerdos y 3 kappas por dimension (puntuales; los IC no se comprueban). Ademas 2 alfas de Krippendorff que r2_limpio no reporta, como control del calculo',
           f'{sum(a == c and k == p for a, k, c, p in pares)}/6 filas, {len(alfas)} alfas')
 
     print('\n6. Reconstruccion de la matriz desde el crudo')
