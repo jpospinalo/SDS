@@ -8,12 +8,13 @@ Comprueba, sin escribir nada:
   2. Que las diferencias entre data/raw y data/processed son exactamente las
      27 del registro: 26 de presencia y 1 de calidad.
   3. Que no queda ninguna decision AUSENTE + calidad positiva fuera de S3.
-  4. Que la matriz reproduce los resultados de r2_limpio por seccion y globales (Tabla 3 y texto).
-  4b. Que reproduce las Tablas 1, 2 y 4 y la dispersion del puntaje global.
+  4. Que la matriz reproduce la calidad y completitud por seccion y las cifras globales.
+  4b. Items por seccion y dominio, FDS por fabricante y uso, items citados y dispersion.
   5. Que las codificaciones externas son las declaradas (y las plantillas estan vacias) y que la
      concordancia se reproduce desde ellas.
   6. Que preprocessing.ipynb regenera la matriz desde el crudo bit a bit.
   7. Que ningun archivo versionado contiene nombres de fabricantes o productos.
+  8. Que src/analisis_congelado.py reproduce todos los valores de src/resultados_esperados.py.
 Sale con codigo 1 si alguna comprobacion falla.
 """
 import csv, hashlib, sys
@@ -108,7 +109,7 @@ def main():
     check(len(fuera) == 0, 'ninguna ausencia con calidad positiva fuera de S3', str(len(fuera)))
     check(len(dentro) == 29, 'las 29 excepciones de S3 se conservan', str(len(dentro)))
 
-    print('\n4. Resultados reportados en r2_limpio (Tabla 3 y texto)')
+    print('\n4. Calidad y completitud por seccion y cifras globales')
     sec = defaultdict(lambda: defaultdict(list))
     punt = []
     for r in filas:
@@ -131,30 +132,30 @@ def main():
         c = sum(100 * sum(1 for x in v if x[0]) / len(v) for v in it.values()) / len(it)
         if abs(round(q, 1) - PUB[s][0]) >= 0.05 or abs(round(c, 1) - PUB[s][1]) >= 0.05:
             mal.append('S%d' % s)
-    check(not mal, 'las 16 secciones reproducen la tabla publicada', ','.join(mal))
+    check(not mal, 'las 16 secciones reproducen la calidad y completitud congeladas', ','.join(mal))
     media = sum(punt) / len(punt)
     check(round(media, 1) == 61.6, 'la media global es 61,6', f'{media:.4f}')
     cfg = {tuple((r[c] or '').strip() + '|' + (r.get('CALIDAD_' + c[5:]) or '').strip()
                  for c in r if c.startswith('ITEM_')) for r in filas}
     check(len(cfg) == 24, 'hay 24 configuraciones distintas', str(len(cfg)))
 
-    print('\n4b. Tablas 1, 2 y 4 y cifras del texto de r2_limpio')
+    print('\n4b. Items por seccion y dominio, fabricante y uso, items citados y dispersion')
     import statistics
     cab = [c for c in filas[0] if c.startswith('ITEM_')]
     n_sec = Counter(int(c[5:].split('_')[0]) for c in cab)
     esperado_sec = {1: 6, 2: 7, 3: 9, 4: 4, 5: 4, 6: 4, 7: 3, 8: 4, 9: 2, 10: 7, 11: 6, 12: 6, 13: 2, 14: 7, 15: 2, 16: 2}
-    check(dict(n_sec) == esperado_sec and len(cab) == 75, 'Tabla 1: 75 items repartidos como en r2_limpio por seccion',
+    check(dict(n_sec) == esperado_sec and len(cab) == 75, '75 items repartidos por seccion segun el instrumento',
           str(dict(n_sec)) if dict(n_sec) != esperado_sec else '')
     dom = {'G1': range(1, 4), 'G2': range(4, 7), 'G3': range(7, 9), 'G4': range(9, 13), 'G5': range(13, 17)}
     esperado_dom = {'G1': 22, 'G2': 12, 'G3': 7, 'G4': 21, 'G5': 13}
     got_dom = {g: sum(n_sec[s] for s in r) for g, r in dom.items()}
-    check(got_dom == esperado_dom, 'Tabla 1: items por dominio G1 22, G2 12, G3 7, G4 21, G5 13', str(got_dom) if got_dom != esperado_dom else '')
+    check(got_dom == esperado_dom, 'items por dominio G1 22, G2 12, G3 7, G4 21, G5 13', str(got_dom) if got_dom != esperado_dom else '')
 
     t2 = Counter((r['FABRICANTE'].strip(), r['USO'].strip()) for r in filas)
     esperado_t2 = {('F01', 'INDUSTRIAL'): 5, ('F02', 'DOMESTICA'): 5, ('F03', 'INDUSTRIAL'): 5, ('F03', 'DOMESTICA'): 5,
                    ('F04', 'INDUSTRIAL'): 5, ('F05', 'INDUSTRIAL'): 5, ('F06', 'INDUSTRIAL'): 5, ('F06', 'DOMESTICA'): 5,
                    ('F07', 'DOMESTICA'): 5, ('F08', 'DOMESTICA'): 5}
-    check(dict(t2) == esperado_t2 and sum(t2.values()) == 50, 'Tabla 2: FDS por fabricante y uso (25 industrial, 25 domestico)',
+    check(dict(t2) == esperado_t2 and sum(t2.values()) == 50, 'FDS por fabricante y uso (25 industrial, 25 domestico)',
           '' if dict(t2) == esperado_t2 else str(sorted(t2.items())))
 
     def item_stats(col):
@@ -178,10 +179,10 @@ def main():
         c_, q_ = item_stats(it.replace('.', '_'))
         if c_ is None or (c_pub is not None and int(round(c_)) != c_pub) or (q_pub is not None and int(round(q_)) != q_pub):
             malos.append(f'{it}: {c_ if c_ is None else round(c_, 1)}/{q_ if q_ is None else round(q_, 1)} vs {c_pub}/{q_pub}')
-    check(not malos, 'Tabla 4: los 23 valores de items citados coinciden con la matriz', '; '.join(malos))
+    check(not malos, 'los 23 valores de items citados coinciden con la matriz', '; '.join(malos))
     cal12 = [item_stats(c[5:])[1] for c in cab if c.startswith('ITEM_12_')]
     check(len(cal12) == 6 and sum(33 <= round(x) <= 54 for x in cal12) == 5,
-          'Tabla 4: cinco items de S12 con calidad entre 33 y 54', str([round(x) for x in cal12]))
+          'cinco items de S12 con calidad entre 33 y 54', str([round(x) for x in cal12]))
     sd = statistics.stdev(punt)
     check(round(sd, 1) == 21.6 and round(min(punt), 1) == 28.0 and round(max(punt), 1) == 92.2,
           'texto: DE 21,6, minimo 28,0 y maximo 92,2 del puntaje global por FDS',
@@ -211,7 +212,7 @@ def main():
     e = [str(RAIZ / 'data' / 'external' / n) for n in EXT]
     rc = subprocess.run([sys.executable, str(RAIZ / 'src' / 'kappa' / 'verificacion_concordancia.py'), *e],
                         capture_output=True, text=True)
-    # Se comparan los valores CALCULADOS con los publicados (escenario 2, el de la Tabla 5).
+    # Se comparan los valores CALCULADOS con los publicados (escenario 2).
     # El texto 'publicado ...' lo imprime el script como constante: no basta con buscarlo.
     import re
     esc2 = rc.stdout.split('ESCENARIO 2')[-1] if 'ESCENARIO 2' in rc.stdout else ''
@@ -220,7 +221,7 @@ def main():
     ok_k = len(pares) == 6 and all(a == c and k == p for a, k, c, p in pares)
     ok_a = len(alfas) == 2 and all(f'{float(x):.3f}' == y for x, y in alfas)
     check(rc.returncode == 0 and ok_k and ok_a,
-          'Tabla 5 de r2_limpio: 3 acuerdos y 3 kappas por dimension (puntuales; los IC no se comprueban). Ademas 2 alfas de Krippendorff que r2_limpio no reporta, como control del calculo',
+          'concordancia entre evaluadores: 3 acuerdos y 3 kappas por dimension (puntuales; los IC no se comprueban) y 2 alfas de Krippendorff como control del calculo',
           f'{sum(a == c and k == p for a, k, c, p in pares)}/6 filas, {len(alfas)} alfas')
 
     print('\n6. Reconstruccion de la matriz desde el crudo')
@@ -274,6 +275,20 @@ def main():
                 hallazgos.append(rel); break
     check(not hallazgos, 'ningun archivo versionado (codigo, salidas de cuadernos, datos) contiene nombres de fabricantes o productos',
           ', '.join(hallazgos))
+
+    print('\n8. Resultados estadisticos congelados')
+    import importlib.util, json
+    def _mod(nombre):
+        spec = importlib.util.spec_from_file_location(nombre, RAIZ / 'src' / f'{nombre}.py')
+        m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m
+    try:
+        ac, esp = _mod('analisis_congelado'), _mod('resultados_esperados')
+        R = json.loads(json.dumps(ac.calcular(), default=str))
+        malos = esp.comparar(R)
+        check(not malos, f'src/analisis_congelado.py reproduce los {len(esp.ESPERADO)} valores de src/resultados_esperados.py',
+              '; '.join(malos[:5]) + (f' (y {len(malos) - 5} mas)' if len(malos) > 5 else ''))
+    except ImportError as e:
+        check(False, 'resultados congelados: falta una dependencia (pip install -r requirements.txt)', str(e))
 
     print()
     if fallos:
