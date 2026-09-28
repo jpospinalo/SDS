@@ -1,0 +1,16 @@
+# Versiones con las que se produjeron los resultados publicados.
+# Tomadas del entorno .venv del repositorio (Python 3.13).
+# La reproduccion de data/processed/eval.csv desde data/raw/eval.csv se verifico tambien con
+# pandas 2.3.3 y 3.0.2 (mismo SHA-256), asi que estos pines no son un requisito estricto.
+# Reconstruir con:  python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+pandas==3.0.1
+numpy==2.4.2
+scipy==1.17.0
+scikit-learn==1.8.0
+matplotlib==3.10.8
+seaborn==0.13.2
+# openpyxl y krippendorff NO estan en el .venv original: su version de referencia no se registro.
+# Solo para abrir los .xlsx de data/raw/
+openpyxl
+# Solo para el bloque de concordancia externa (src/kappa/)
+krippendorff
