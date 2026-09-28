@@ -31,3 +31,12 @@ build/
 # 6) Archivos de sistema
 .DS_Store
 Thumbs.db
+
+# 7) Entornos alternativos y archivos de bloqueo de Office
+.venv*/
+~$*.docx
+~$*.xlsx
+
+# 8) Material que no pertenece al repositorio
+notebooks/EDA - SDS/
+_a_eliminar/

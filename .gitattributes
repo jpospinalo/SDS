@@ -1,0 +1,5 @@
+# Los datos se versionan byte a byte: git no debe normalizar finales de linea,
+# de lo contrario el SHA-256 declarado en README.md deja de coincidir.
+*.csv   -text
+*.xlsx  binary
+*.png   binary
