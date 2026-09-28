@@ -1,0 +1,8 @@
+#!/bin/sh
+# Rechaza el commit si la cadena de datos no verifica.
+cd "$(git rev-parse --show-toplevel)" || exit 1
+PY=python3
+.venv/bin/python -c "import pandas, numpy" >/dev/null 2>&1 && PY=.venv/bin/python
+LOG="${TMPDIR:-/tmp}/verificacion_precommit.log"
+"$PY" src/verificar_correcciones.py > "$LOG" 2>&1 || {
+  cat "$LOG"; echo; echo "Commit rechazado: src/verificar_correcciones.py fallo (interprete: $PY)."; exit 1; }
