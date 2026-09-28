@@ -9,6 +9,10 @@ Comprueba, sin escribir nada:
      27 del registro: 26 de presencia y 1 de calidad.
   3. Que no queda ninguna decision AUSENTE + calidad positiva fuera de S3.
   4. Que la matriz reproduce los resultados publicados por seccion y globales.
+  5. Que las codificaciones externas son las declaradas (y las plantillas estan vacias) y que la
+     concordancia se reproduce desde ellas.
+  6. Que preprocessing.ipynb regenera la matriz desde el crudo bit a bit.
+  7. Que ningun archivo versionado contiene nombres de fabricantes o productos.
 Sale con codigo 1 si alguna comprobacion falla.
 """
 import csv, hashlib, sys
@@ -120,6 +124,77 @@ def main():
     cfg = {tuple((r[c] or '').strip() + '|' + (r.get('CALIDAD_' + c[5:]) or '').strip()
                  for c in r if c.startswith('ITEM_')) for r in filas}
     check(len(cfg) == 24, 'hay 24 configuraciones distintas', str(len(cfg)))
+
+    print('\n5. Codificaciones externas')
+    EXT = {'eval_1.csv': ('d69c39637bd965700c3924924fe901866b2f1976cc2f2c33b5b8bc97c655dcb7', 823),
+           'eval_2.csv': ('9b9f4ae8b21c0ec6c16b08026949d0c822f965acf60e6e5952eeab8b25314d4c', 816),
+           'eval_original.csv': ('ddf015b57a905cc09fd33bd97d6ca32344c7554ca3148ca79a6371320ff8a334', 1065)}
+    for nombre, (sha, llenas) in EXT.items():
+        ruta = RAIZ / 'data' / 'external' / nombre
+        ok = ruta.exists() and hashlib.sha256(ruta.read_bytes()).hexdigest() == sha
+        n_llenas = -1
+        if ok:
+            r = list(csv.DictReader(open(ruta, encoding='utf-8-sig')))
+            n_llenas = sum(1 for x in r if (x.get('CALIDAD') or '').strip())
+            ok = len(r) == 1065 and n_llenas == llenas
+        check(ok, f'data/external/{nombre}: hash, 1.065 filas y {llenas} calidades diligenciadas', str(n_llenas))
+    for nombre in ('plantilla_evaluador_1.csv', 'plantilla_evaluador_2.csv'):
+        ruta = RAIZ / 'data' / 'external' / 'plantillas' / nombre
+        r = list(csv.DictReader(open(ruta, encoding='utf-8-sig'))) if ruta.exists() else []
+        vacias = len(r) == 1065 and not any((x.get('CALIDAD') or '').strip() for x in r)
+        check(vacias, f'plantillas/{nombre}: 1.065 filas con CALIDAD vacia (no es un dato)')
+    check(not (RAIZ / 'data' / 'external' / 'plantillas' / 'eval_1.csv').exists(),
+          'ninguna plantilla conserva el nombre eval_N.csv')
+    import subprocess
+    e = [str(RAIZ / 'data' / 'external' / n) for n in EXT]
+    rc = subprocess.run([sys.executable, str(RAIZ / 'src' / 'kappa' / 'verificacion_concordancia.py'), *e],
+                        capture_output=True, text=True)
+    check(rc.returncode == 0 and rc.stdout.count('publicado 92.0% 0.775') >= 1,
+          'la concordancia externa se reproduce desde data/external/ (Tabla 5)')
+
+    print('\n6. Reconstruccion de la matriz desde el crudo')
+    import json, os, tempfile
+    nb = json.load(open(RAIZ / 'notebooks' / 'preprocessing.ipynb', encoding='utf-8'))
+    codigo = [''.join(c['source']) for c in nb['cells'] if c['cell_type'] == 'code']
+    codigo = [c for c in codigo if not c.lstrip().startswith(('!', '%')) and 'pip install' not in c]
+    with tempfile.TemporaryDirectory() as tmp:
+        t = Path(tmp)
+        (t / 'data' / 'raw').mkdir(parents=True); (t / 'data' / 'processed').mkdir(); (t / 'notebooks').mkdir()
+        (t / 'data' / 'raw' / 'eval.csv').write_bytes(CRUDO.read_bytes())
+        (t / 'notebooks' / '_reconstruir.py').write_text('\n\n'.join(codigo), encoding='utf-8')
+        rc = subprocess.run([sys.executable, '_reconstruir.py'], cwd=t / 'notebooks', capture_output=True, text=True,
+                            env={**os.environ, 'MPLBACKEND': 'Agg'})
+        gen = t / 'data' / 'processed' / 'eval.csv'
+        dic = t / 'data' / 'processed' / 'diccionario_items.csv'
+        check(rc.returncode == 0, 'preprocessing.ipynb se ejecuta sin errores', rc.stderr.strip()[-200:])
+        check(gen.exists() and hashlib.sha256(gen.read_bytes()).hexdigest() == SHA_PROC,
+              'el cuaderno regenera data/processed/eval.csv bit a bit desde data/raw/eval.csv')
+        check(dic.exists() and hashlib.sha256(dic.read_bytes()).hexdigest().startswith('d513f3d6ba54b640'),
+              'el cuaderno regenera diccionario_items.csv bit a bit')
+
+    print('\n7. Ningun nombre comercial en lo versionado')
+    # Se comparan huellas, no nombres: este archivo no debe contener lo que vigila.
+    HUELLAS = {7: {'857d811fc120597f613b593b8ec6eaca95a4ff2146b2b8d20240dd6e0723d18c',
+                   '31589223f4438fead00a992d59c6d8698448b4ecc2f59ef2e0d25db40756f2ea'},
+               4: {'c904fc9e9f1289270c3eb451a6af901c80bc8871704cde507e3c62baea993488'},
+               6: {'679cf303517c04fb04c35c8ab6caa5fbf3acd9e91f1423810b326737a446affb'},
+               12: {'c71292e2fc02470fc96eabd3dcdb146bacde034f51ddb02eb8800f46fd6b5c58'}}
+    import re
+    lista = subprocess.run(['git', 'ls-files'], cwd=RAIZ, capture_output=True, text=True).stdout.split('\n')
+    EXCEPCION = {'data/raw/eval.xlsx'}   # interno, sin anonimizar; se documenta en el README
+    hallazgos = []
+    for rel in filter(None, lista):
+        if rel in EXCEPCION or rel.lower().endswith(('.png', '.xlsx', '.docx', '.pdf')):
+            continue
+        f = RAIZ / rel
+        if not f.exists():
+            continue
+        txt = f.read_bytes().decode('utf-8', errors='ignore').lower()
+        for tok in set(re.findall(r'[a-z0-9]+', txt)):
+            if any(len(tok) >= L and hashlib.sha256(tok[:L].encode()).hexdigest() in H for L, H in HUELLAS.items()):
+                hallazgos.append(rel); break
+    check(not hallazgos, 'ningun archivo versionado (codigo, salidas de cuadernos, datos) contiene nombres de fabricantes o productos',
+          ', '.join(hallazgos))
 
     print()
     if fallos:

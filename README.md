@@ -70,7 +70,7 @@ SHA-256  3e153701b68d96dbab68779d6196c4df34f31eb90be3f2eb087944f6f12d7d83
 | `notebooks/EDA.ipynb` | Análisis descriptivo |
 | `notebooks/figuras_articulo.ipynb` | Figuras del artículo → `outputs/figuras_articulo/`. Ejecutar desde `notebooks/` |
 
-**Semilla única para todo lo aleatorio: `20260916`.** Los intervalos de confianza son percentiles 2,5 y 97,5 de 2.000 remuestreos **por FDS completa**, no por ítem.
+**Semillas.** Los intervalos de la concordancia externa (Tabla 5, `src/kappa/verificacion_concordancia.py`) usan `20260916`: percentiles 2,5 y 97,5 de 2.000 remuestreos **por FDS completa**, no por ítem. El resto del código conserva las semillas con que se produjeron los resultados y figuras publicados —`314159`, `1000+i` y `42` en las figuras; `1496` en `kappa_analysis.py`; `2026` en la selección de la submuestra—. **No se unificaron**: hacerlo cambiaría los intervalos de las figuras ya publicadas.
 
 ## Salidas
 
