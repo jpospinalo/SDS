@@ -48,6 +48,8 @@ docs/            registro de correcciones, decisiones de datos, notas y prompts 
 
 ## Instalación y comprobación
 
+Requiere Python 3.11 o superior (el entorno de referencia es 3.13); con Python 3.10 la instalación de pandas 3.0.1 falla.
+
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python src/verificar_correcciones.py     # debe terminar con «Todas las comprobaciones pasaron.»
