@@ -1,3 +1,10 @@
+NOTA DEL REPOSITORIO (28-sep-2026): este es el instructivo original entregado
+a los evaluadores. En el repositorio las plantillas en blanco que aquí se
+llaman eval_1.csv y eval_2.csv están en data/external/plantillas/ como
+plantilla_evaluador_1.csv y plantilla_evaluador_2.csv. Los archivos
+data/external/eval_1.csv y eval_2.csv son las codificaciones YA DILIGENCIADAS.
+fds_calibracion.csv no se incorporó al repositorio.
+
 VALIDACIÓN EXTERNA DEL INSTRUMENTO — ARCHIVOS DE CODIFICACIÓN
 ==============================================================
 

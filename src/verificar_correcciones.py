@@ -149,8 +149,17 @@ def main():
     e = [str(RAIZ / 'data' / 'external' / n) for n in EXT]
     rc = subprocess.run([sys.executable, str(RAIZ / 'src' / 'kappa' / 'verificacion_concordancia.py'), *e],
                         capture_output=True, text=True)
-    check(rc.returncode == 0 and rc.stdout.count('publicado 92.0% 0.775') >= 1,
-          'la concordancia externa se reproduce desde data/external/ (Tabla 5)')
+    # Se comparan los valores CALCULADOS con los publicados (escenario 2, el de la Tabla 5).
+    # El texto 'publicado ...' lo imprime el script como constante: no basta con buscarlo.
+    import re
+    esc2 = rc.stdout.split('ESCENARIO 2')[-1] if 'ESCENARIO 2' in rc.stdout else ''
+    pares = re.findall(r'(\d+\.\d)% kw?=(-?\d\.\d{3}).*?publicado (\d+\.\d)% (\d\.\d{3})', esc2)
+    alfas = re.findall(r'intervalo (\d\.\d{4}).*?publicado (\d\.\d{3})', esc2)
+    ok_k = len(pares) == 6 and all(a == c and k == p for a, k, c, p in pares)
+    ok_a = len(alfas) == 2 and all(f'{float(x):.3f}' == y for x, y in alfas)
+    check(rc.returncode == 0 and ok_k and ok_a,
+          'la concordancia externa se reproduce desde data/external/ (Tabla 5: 6 acuerdos, 6 kappas, 2 alfas)',
+          f'{sum(a == c and k == p for a, k, c, p in pares)}/6 filas, {len(alfas)} alfas')
 
     print('\n6. Reconstruccion de la matriz desde el crudo')
     import json, os, tempfile
@@ -180,7 +189,15 @@ def main():
                6: {'679cf303517c04fb04c35c8ab6caa5fbf3acd9e91f1423810b326737a446affb'},
                12: {'c71292e2fc02470fc96eabd3dcdb146bacde034f51ddb02eb8800f46fd6b5c58'}}
     import re
-    lista = subprocess.run(['git', 'ls-files'], cwd=RAIZ, capture_output=True, text=True).stdout.split('\n')
+    try:
+        lista = subprocess.run(['git', 'ls-files', '-z'], cwd=RAIZ, capture_output=True, text=True).stdout.split('\0')
+    except OSError:
+        lista = []
+    if not any(lista):
+        # Sin git (p. ej., copia descargada): se revisa todo el arbol salvo lo que git ignoraria.
+        OMITIR = {'.git', '.venv', '_a_eliminar', 'EDA - SDS', '__pycache__'}
+        lista = [str(f.relative_to(RAIZ)) for f in RAIZ.rglob('*')
+                 if f.is_file() and not OMITIR.intersection(f.relative_to(RAIZ).parts)]
     EXCEPCION = {'data/raw/eval.xlsx'}   # interno, sin anonimizar; se documenta en el README
     hallazgos = []
     for rel in filter(None, lista):

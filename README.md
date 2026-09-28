@@ -11,7 +11,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python src/verificar_correcciones.py
 ```
 
-Verifica el hash de la matriz, las 27 correcciones, la excepción de confidencialidad y que los resultados publicados se reproducen. Sale con código 0 si todo cuadra.
+Verifica el hash de la matriz, las 27 correcciones, la excepción de confidencialidad y que los resultados publicados se reproducen; las codificaciones externas y la Tabla 5 (valores calculados contra publicados); que `notebooks/preprocessing.ipynb` regenera la matriz bit a bit desde el crudo; y que ningún archivo versionado contiene nombres de fabricantes o productos. Sale con código 0 si todo cuadra. El gancho `.git/hooks/pre-commit` lo ejecuta antes de cada commit; no se versiona, así que debe copiarse en cada clon.
 
 ## La matriz
 
@@ -74,7 +74,14 @@ SHA-256  3e153701b68d96dbab68779d6196c4df34f31eb90be3f2eb087944f6f12d7d83
 
 ## Salidas
 
-`outputs/figuras_articulo/` contiene las figuras del artículo. `outputs/bloque_metodologico/` contiene los recálculos y los registros de cambios por ítem, sección y dominio, más `excepciones_confidencialidad.csv` con las 29 de la Sección 3. Todo es **derivado**: se regenera con el código y no se edita a mano.
+`outputs/figuras_articulo/` contiene las figuras del artículo. `outputs/bloque_metodologico/` contiene los recálculos y los registros de cambios por ítem, sección y dominio, más `excepciones_confidencialidad.csv` con las 29 de la Sección 3. Todo es **derivado** y no se edita a mano. Los recálculos (`*_recalculados.csv`, `excepciones_confidencialidad.csv`, `resumen_auditoria.json`) se regeneran directamente: `cd notebooks && python ../src/auditoria_bloque_metodologico.py ../data/processed/eval.csv --salida <dir>`.
+
+Los `cambios_*.csv` descomponen el efecto de las correcciones en **dos pasos encadenados**, y cada uno compara dos estados intermedios que no se guardan como archivo:
+
+1. `outputs/bloque_metodologico/cambios_*.csv` — efecto de las **21 correcciones de presencia** posteriores a la versión v8_7. *Antes*: la matriz final con esas 21 celdas devueltas a `AUSENTE` y la calidad de F03-P03-D/1.2 devuelta a `CONFIABLE`. *Después*: la matriz final con solo esa calidad devuelta a `CONFIABLE`. Por eso su columna «después» para la brecha de 1.2, S1 y G1 no coincide con `items_recalculados.csv`: todavía no incluye la corrección de calidad.
+2. `outputs/bloque_metodologico/impacto_1_2/cambios_*.csv` — efecto aislado de la **corrección de calidad**. *Antes*: el «después» del paso 1. *Después*: la matriz final.
+
+Ambos pasos se verificaron reconstruyendo esos estados desde `data/processed/eval.csv` y `docs/registro_correcciones.md`: los seis archivos se reproducen byte a byte. El paso 1 requiere llamar a `calcular(..., validar_excepciones=False)`, porque su estado «después» tiene 30 ausencias con calidad positiva (las 29 de S3 más F03-P03-D/1.2).
 
 ## Prompts de trabajo
 
