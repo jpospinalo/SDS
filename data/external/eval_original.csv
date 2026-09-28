@@ -1,0 +1,1066 @@
+EVALUADOR,FDS_ID,SECCION,ITEM,NOMBRE_ITEM,PRESENCIA,CALIDAD
+ORIGINAL,F01-P01-I,S1,1.0,Título: Identificación del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P01-I,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P01-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P01-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S6,6.2,Precauciones relativas al medio ambiente,AUSENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",AUSENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S8,8.2,Controles técnicos apropiados,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P01-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P01-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P01-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S11,11.1,Efectos toxicológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P01-I,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S12,12.1,Toxicidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S12,12.2,Persistencia y degradabilidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S12,12.3,Potencial de bioacumulación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S12,12.4,Movilidad en el suelo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S12,12.5,Otros efectos adversos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F01-P01-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F01-P01-I,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P03-I,S1,1.0,Título: Identificación del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P03-I,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P03-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P03-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S6,6.2,Precauciones relativas al medio ambiente,AUSENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S8,8.2,Controles técnicos apropiados,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P03-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P03-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S11,11.1,Efectos toxicológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F01-P03-I,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S12,12.1,Toxicidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S12,12.2,Persistencia y degradabilidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S12,12.3,Potencial de bioacumulación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S12,12.4,Movilidad en el suelo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S12,12.5,Otros efectos adversos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F01-P03-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F01-P03-I,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S1,1.5,Número de teléfono para emergencias,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S5,5.2,Peligros específicos del producto químico,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S6,6.2,Precauciones relativas al medio ambiente,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S8,8.2,Controles técnicos apropiados,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S10,10.2.1,Reactividad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S10,10.2.2,Estabilidad química,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S10,10.2.3,Posibilidad de reacciones peligrosas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S10,10.2.4,Condiciones que deben evitarse,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S12,12.0,Título: Información ecotoxicológica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S12,12.1,Toxicidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S12,12.2,Persistencia y degradabilidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S12,12.3,Potencial de bioacumulación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S12,12.4,Movilidad en el suelo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S12,12.5,Otros efectos adversos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S13,13.1,Métodos de eliminación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S14,14.0,Título: Información relativa al transporte,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S14,14.1,Número ONU,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P02-D,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S14,14.5,Riesgos ambientales,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S14,14.6,Precauciones especiales para el usuario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P02-D,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F02-P02-D,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S1,1.5,Número de teléfono para emergencias,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S5,5.2,Peligros específicos del producto químico,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S8,8.2,Controles técnicos apropiados,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S10,10.2.1,Reactividad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S10,10.2.3,Posibilidad de reacciones peligrosas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S10,10.2.6,Productos de descomposición peligrosos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S12,12.0,Título: Información ecotoxicológica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S12,12.1,Toxicidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S12,12.2,Persistencia y degradabilidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S12,12.3,Potencial de bioacumulación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S12,12.4,Movilidad en el suelo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S12,12.5,Otros efectos adversos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S13,13.1,Métodos de eliminación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S14,14.0,Título: Información relativa al transporte,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S14,14.1,Número ONU,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S14,14.3,Clase(s) relativas al transporte,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S14,14.5,Riesgos ambientales,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F02-P04-D,S14,14.6,Precauciones especiales para el usuario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F02-P04-D,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F02-P04-D,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S1,1.2,Otros medios de identificación,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P02-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S8,8.2,Controles técnicos apropiados,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P02-I,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P02-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P02-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P02-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F03-P02-I,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S1,1.1,Identificador SGA del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S1,1.2,Otros medios de identificación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S8,8.2,Controles técnicos apropiados,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S14,14.1,Número ONU,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S14,14.2,Designación oficial de transporte de las Naciones Unidas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S14,14.3,Clase(s) relativas al transporte,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S14,14.4,Grupo de embalaje/envasado si se aplica,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S14,14.5,Riesgos ambientales,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S14,14.6,Precauciones especiales para el usuario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-D,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-D,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-D,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S1,1.1,Identificador SGA del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S1,1.2,Otros medios de identificación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S8,8.2,Controles técnicos apropiados,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P04-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P04-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F03-P04-I,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S1,1.1,Identificador SGA del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S1,1.2,Otros medios de identificación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S8,8.2,Controles técnicos apropiados,PRESENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),AUSENTE,NO_CONFIABLE
+ORIGINAL,F03-P05-D,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F03-P05-D,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F03-P05-D,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S1,1.0,Título: Identificación del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F04-P01-I,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,AUSENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S8,8.2,Controles técnicos apropiados,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P01-I,S11,11.2,Información sobre las posibles vías de exposición,AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P01-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P01-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P01-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P01-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F04-P01-I,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S1,1.1,Identificador SGA del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S1,1.2,Otros medios de identificación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S8,8.2,Controles técnicos apropiados,PRESENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S10,10.2.1,Reactividad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),AUSENTE,NO_CONFIABLE
+ORIGINAL,F04-P02-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F04-P02-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F04-P02-I,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F05-P04-I,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F05-P04-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F05-P04-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F05-P04-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S8,8.2,Controles técnicos apropiados,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S10,10.2.1,Reactividad,PRESENTE,NO_CONFIABLE
+ORIGINAL,F05-P04-I,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S11,11.1,Efectos toxicológicos,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S12,12.1,Toxicidad,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S14,14.5,Riesgos ambientales,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S14,14.6,Precauciones especiales para el usuario,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F05-P04-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F05-P04-I,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S1,1.1,Identificador SGA del producto,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S1,1.2,Otros medios de identificación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S1,1.3,Uso recomendado del producto químico y restricciones de uso,AUSENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S1,1.5,Número de teléfono para emergencias,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S5,5.1,Medios adecuados (o no adecuados) de extinción,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S5,5.2,Peligros específicos del producto químico,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S6,6.2,Precauciones relativas al medio ambiente,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S8,8.2,Controles técnicos apropiados,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S10,10.2.1,Reactividad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S10,10.2.2,Estabilidad química,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S10,10.2.3,Posibilidad de reacciones peligrosas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S12,12.0,Título: Información ecotoxicológica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S12,12.2,Persistencia y degradabilidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S12,12.4,Movilidad en el suelo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S12,12.5,Otros efectos adversos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P01-I,S14,14.0,Título: Información relativa al transporte,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S14,14.2,Designación oficial de transporte de las Naciones Unidas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S14,14.3,Clase(s) relativas al transporte,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S14,14.5,Riesgos ambientales,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S14,14.6,Precauciones especiales para el usuario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P01-I,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F06-P01-I,S16,16.1,Otras informaciones,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S1,1.1,Identificador SGA del producto,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S1,1.2,Otros medios de identificación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S1,1.3,Uso recomendado del producto químico y restricciones de uso,AUSENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S1,1.5,Número de teléfono para emergencias,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S5,5.1,Medios adecuados (o no adecuados) de extinción,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S5,5.2,Peligros específicos del producto químico,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S6,6.2,Precauciones relativas al medio ambiente,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S8,8.2,Controles técnicos apropiados,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S10,10.2.1,Reactividad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S10,10.2.2,Estabilidad química,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S10,10.2.3,Posibilidad de reacciones peligrosas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S12,12.0,Título: Información ecotoxicológica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S12,12.1,Toxicidad,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S12,12.2,Persistencia y degradabilidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S12,12.4,Movilidad en el suelo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S12,12.5,Otros efectos adversos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F06-P05-D,S14,14.0,Título: Información relativa al transporte,PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S14,14.1,Número ONU,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S14,14.2,Designación oficial de transporte de las Naciones Unidas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S14,14.3,Clase(s) relativas al transporte,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S14,14.5,Riesgos ambientales,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S14,14.6,Precauciones especiales para el usuario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F06-P05-D,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F06-P05-D,S16,16.1,Otras informaciones,PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S1,1.1,Identificador SGA del producto,PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S1,1.5,Número de teléfono para emergencias,PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,AUSENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S4,4.0,Título: Primeros auxilios,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S5,5.2,Peligros específicos del producto químico,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S6,6.2,Precauciones relativas al medio ambiente,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S8,8.2,Controles técnicos apropiados,PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S10,10.2.1,Reactividad,PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S10,10.2.2,Estabilidad química,PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S10,10.2.3,Posibilidad de reacciones peligrosas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S10,10.2.5,Materiales incompatibles,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S10,10.2.6,Productos de descomposición peligrosos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S11,11.0,Título: Información toxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S11,11.1,Efectos toxicológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S12,12.0,Título: Información ecotoxicológica,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S12,12.1,Toxicidad,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S12,12.2,Persistencia y degradabilidad,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S12,12.3,Potencial de bioacumulación,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S12,12.4,Movilidad en el suelo,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S12,12.5,Otros efectos adversos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S13,13.1,Métodos de eliminación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F07-P01-D,S14,14.0,Título: Información relativa al transporte,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S14,14.1,Número ONU,AUSENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S14,14.2,Designación oficial de transporte de las Naciones Unidas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S14,14.3,Clase(s) relativas al transporte,AUSENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S14,14.4,Grupo de embalaje/envasado si se aplica,AUSENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S14,14.5,Riesgos ambientales,AUSENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S14,14.6,Precauciones especiales para el usuario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F07-P01-D,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F07-P01-D,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S1,1.0,Título: Identificación del producto,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S1,1.1,Identificador SGA del producto,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S1,1.2,Otros medios de identificación,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S1,1.3,Uso recomendado del producto químico y restricciones de uso,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S1,1.4,Datos del proveedor,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S1,1.5,Número de teléfono para emergencias,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S2,2.0,Título: Identificación del peligro o peligros,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S2,2.1,Clasificación  SGA  de  la  sustancia/mezcla  y  cualquier  información nacional o regional,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S2,2.1.1,Elementos de la etiqueta SGA: Pictogramas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S2,2.1.2,Elementos de la etiqueta SGA: Palabra de Advertencia,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S2,2.1.3,Elementos de la etiqueta SGA: Indicaciones de Peligro,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S2,2.1.4,Elementos de la etiqueta SGA Consejos de Prudencia,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S2,2.2,"Otros peligros que no figuren en la clasificación (por ejemplo, peligro de explosión de partículas de polvo) o que no están cubiertos por el SGA",AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S3,3.0,Título: Composición/información sobre los componentes,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S3,3.2.1,Identidad química de la sustancia,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S3,3.2.1.1,Nombres comunes o sinónimos de la mezcla,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S3,3.2.1.2,Número CAS y otros identificadores únicos de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S3,3.2.1.3,Concentración o gamas de concentraciones de todos los componentes de la mezcla,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S4,4.0,Título: Primeros auxilios,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S4,4.1,"Descripción de las medidas necesarias, desglosadas con arreglo a las diferentes vías de exposición, esto es, inhalación, contacto cutáneo y ocular e ingestión",PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S4,4.2,"Síntomas/efectos más importantes, agudos y retardados",PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S4,4.3,Indicación de la necesidad de recibir atención médica inmediata y tratamiento especial requerido en caso necesario,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S5,5.0,Título: Medidas de lucha contra incendios,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S5,5.1,Medios adecuados (o no adecuados) de extinción,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S5,5.2,Peligros específicos del producto químico,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S5,5.3,Medidas especiales que deben tomar los equipos de lucha contra incendios,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S6,6.0,Título: Medidas que deben tomarse en caso de vertido accidental,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S6,6.1,"Precauciones individuales, equipos de protección y procedimientos de emergencia",AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S6,6.2,Precauciones relativas al medio ambiente,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S6,6.3,Métodos y materiales para la contención y limpieza de vertidos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S7,7.0,Título: Manipulación y almacenamiento,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S7,7.1,Precauciones que se deben tomar para garantizar una manipulación segura,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S7,7.2,"Condiciones   de   almacenamiento   seguro,   incluidas   cualesquiera incompatibilidades",AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S8,8.0,Controles de exposición/protección personal,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S8,8.1,Parámetros  de  control:  límites  o  valores  de  corte  de  exposición ocupacionales o biológicos,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S8,8.2,Controles técnicos apropiados,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S8,8.3,"Medidas  de  protección  individual,  como  equipos  de  protección personal",PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S9,9.0,Título: Propiedades físicas y químicas,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S9,9.1,Propiedades fisicas y químicas,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S10,10.0,Título: Estabilidad y reactividad,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S10,10.2.1,Reactividad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S10,10.2.2,Estabilidad química,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S10,10.2.3,Posibilidad de reacciones peligrosas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S10,10.2.4,Condiciones que deben evitarse,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S10,10.2.5,Materiales incompatibles,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S10,10.2.6,Productos de descomposición peligrosos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S11,11.0,Título: Información toxicológica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S11,11.1,Efectos toxicológicos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S11,11.2,Información sobre las posibles vías de exposición,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S11,11.3,"Síntomas relacionados con las características físicas, químicas y toxicológicas",AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S11,11.4,Efectos inmediatos y retardados así como efectos crónicos producidos por una exposición a corto y largo plazo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S11,11.5,Medidas numéricas de toxicidad (tales como estimaciones de toxicidad aguda),AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S12,12.0,Título: Información ecotoxicológica,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S12,12.1,Toxicidad,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S12,12.2,Persistencia y degradabilidad,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S12,12.3,Potencial de bioacumulación,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S12,12.4,Movilidad en el suelo,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S12,12.5,Otros efectos adversos,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S13,13.0,Título: Información relativa a la eliminación de los productos,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S13,13.1,Métodos de eliminación,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S14,14.0,Título: Información relativa al transporte,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S14,14.1,Número ONU,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S14,14.2,Designación oficial de transporte de las Naciones Unidas,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S14,14.3,Clase(s) relativas al transporte,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S14,14.4,Grupo de embalaje/envasado si se aplica,PRESENTE,CONFIABLE_CON_RESTRICCIONES
+ORIGINAL,F08-P02-D,S14,14.5,Riesgos ambientales,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S14,14.6,Precauciones especiales para el usuario,AUSENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S15,15.0,Título: Información sobre la reglamentación,PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S15,15.1,"Disposiciones específicas sobre seguridad, salud y medio ambiente para el producto de que se trate",PRESENTE,NO_CONFIABLE
+ORIGINAL,F08-P02-D,S16,16.0,Título: Otras informaciones,PRESENTE,CONFIABLE
+ORIGINAL,F08-P02-D,S16,16.1,Otras informaciones,PRESENTE,CONFIABLE_CON_RESTRICCIONES

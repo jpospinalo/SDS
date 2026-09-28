@@ -1,0 +1,38 @@
+VALIDACIÓN EXTERNA DEL INSTRUMENTO — ARCHIVOS DE CODIFICACIÓN
+==============================================================
+
+eval_original.csv   Codificación consensuada original de las 15 FDS.
+                    No modificar. Es el punto de comparación.
+eval_1.csv          Plantilla del evaluador externo 1.
+eval_2.csv          Plantilla del evaluador externo 2.
+
+Filas por archivo: 1065 (15 FDS x 71 ítems).
+
+COLUMNAS QUE DILIGENCIA EL EVALUADOR
+--------------------------------------------------------------
+PRESENCIA     PRESENTE | AUSENTE
+CALIDAD       CONFIABLE | CONFIABLE_CON_RESTRICCIONES | NO_CONFIABLE
+OBSERVACION   Texto libre. Anotar aquí cualquier duda sobre cómo
+              aplicar el criterio. Ese registro alimenta el ejemplo
+              trabajado y la discusión del kappa por sección.
+
+No modificar EVALUADOR, ORDEN_FDS, FDS_ID, SECCION, ITEM ni
+NOMBRE_ITEM: son las claves con las que se unen los tres archivos.
+
+INDICACIONES
+--------------------------------------------------------------
+1. Codificar en el orden indicado por ORDEN_FDS. Cada evaluador
+   tiene una secuencia distinta, a propósito.
+2. Trabajar de forma independiente. No consultar la codificación
+   original ni la del otro evaluador.
+3. Usar la herramienta en xlsx (criterios y glosario) como
+   referencia para cada ítem.
+4. Antes de empezar, calibrar con las dos FDS de fds_calibracion.csv,
+   que no forman parte de esta submuestra y se excluyen del cálculo.
+
+NOTA SOBRE LOS 71 ÍTEMS
+--------------------------------------------------------------
+El instrumento tiene 75 ítems, pero cuatro corresponden a la rama de
+sustancias puras de la Sección 3 (3.1.1 y subítems). Los 50 productos
+del corpus son mezclas, así que esa rama no aplica y no aparece en
+estos archivos.
