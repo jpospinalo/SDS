@@ -57,10 +57,12 @@ El verificador comprueba, sin escribir nada:
 2. Las 27 correcciones frente al crudo.
 3. La excepción de confidencialidad de la Sección 3.
 4. La Tabla 3 y las cifras globales.
-5. Las Tablas 1, 2 y 4.
-6. Las codificaciones externas y la Tabla 5.
-7. Que `notebooks/preprocessing.ipynb` regenera la matriz bit a bit desde el crudo.
-8. Que no hay nombres comerciales en lo versionado.
+4b. Las Tablas 1, 2 y 4 y la dispersión del puntaje global.
+5. Las codificaciones externas y la Tabla 5.
+6. Que `notebooks/preprocessing.ipynb` regenera la matriz bit a bit desde el crudo.
+7. Que no hay nombres comerciales en lo versionado.
+
+La numeración coincide con los grupos que imprime el verificador.
 
 Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y rechaza el commit si algo falla.
 
@@ -71,7 +73,7 @@ Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y r
 | Tabla 1 — criterios e ítems por sección y dominio | `data/raw/tool.xlsx`, `evaluation/`; el número de ítems, de la matriz | número de ítems por sección y dominio |
 | Tabla 2 — FDS por fabricante y uso | matriz, columnas `FABRICANTE` y `USO` | sí, completa |
 | Tabla 3 — calidad, completitud y brecha por sección | matriz | calidad y completitud de las 16 secciones |
-| Tabla 4 — contenidos con baja puntuación | matriz, a nivel de ítem (también en `outputs/bloque_metodologico/items_recalculados.csv`) | los 18 ítems citados |
+| Tabla 4 — contenidos con baja puntuación | matriz, a nivel de ítem (también en `outputs/bloque_metodologico/items_recalculados.csv`) | los 18 ítems citados, el rango de 2.1–2.1.4 y los cinco ítems de S12 |
 | Tabla 5 — concordancia entre evaluadores | `data/external/` con `src/kappa/verificacion_concordancia.py` | acuerdos y kappas; **no** los IC |
 | Texto: media 61,6; DE 21,6; rango 28,0–92,2 | matriz, puntaje global por FDS | sí |
 | Texto: 24 configuraciones distintas | matriz | sí |
@@ -131,7 +133,7 @@ Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y r
 
 ## Correcciones y decisiones
 
-- `docs/registro_correcciones.md`: las **27 diferencias** entre el crudo y la matriz (26 de presencia y 1 de calidad), con FDS, ítem, valor anterior y valor final. Las 27 están programadas en `notebooks/preprocessing.ipynb`. La de calidad comprueba el valor anterior antes de cambiarlo; las 26 de presencia solo comprueban que la FDS exista. El verificador (grupo 2) exige que la diferencia entre crudo y matriz sea exactamente la del registro.
+- `docs/registro_correcciones.md`: las **27 diferencias** entre el crudo y la matriz (26 de presencia y 1 de calidad), con FDS, ítem, valor anterior y valor final. Las 27 están programadas en `notebooks/preprocessing.ipynb`. La de calidad comprueba el valor anterior antes de cambiarlo; las 26 de presencia solo comprueban que la FDS exista. El verificador (grupo 2) exige que las celdas que difieren entre crudo y matriz sean exactamente las 27 del registro, con sus valores anterior y final.
 - `docs/PLAN_EDITORIAL_CON_CONTROLES.md`: **pese a su nombre**, es el registro de las decisiones de datos del 16 de septiembre de 2026, con el hash de la matriz y de las codificaciones y la semilla. Es un documento histórico: sus instrucciones de edición se refieren a una versión anterior del manuscrito (v8_7).
 
 ## Código

@@ -89,6 +89,18 @@ def main():
     esperado = {'1.2': 1, '1.3': 10, '2.2': 1, '6.2': 5, '7.2': 2, '8.2': 2, '11.4': 2, '14.5': 3}
     real = dict(Counter(k[1].replace('_', '.') for k in pres))
     check(real == esperado, 'el reparto por item coincide con el registro', str(real))
+    # Celda a celda contra docs/registro_correcciones.md: FDS, item, valor anterior y final.
+    import re
+    reg = set()
+    for linea in open(RAIZ / 'docs' / 'registro_correcciones.md', encoding='utf-8'):
+        m = re.match(r'\|\s*(F\d\d-P\d\d-[ID])\s*\|\s*([\d.]+)\s*\|\s*([^|]+)\|\s*([^|]+)\|', linea)
+        if m:
+            reg.add((m.group(1), m.group(2), *(re.sub(r'[*\s]', '', g) for g in m.group(3, 4))))
+    obs = {(i, c.replace('_', '.'), f'{a_}/{b_}', f'{c_}/{d_}') for i, c, a_, b_, c_, d_ in pres + cal}
+    check(obs == reg and len(reg) == 27, 'las 27 celdas cambiadas son exactamente las del registro (FDS, item, antes y despues)',
+          '' if obs == reg else f'solo en la matriz: {sorted(obs - reg)[:3]}; solo en el registro: {sorted(reg - obs)[:3]}')
+    sin_par = sum(1 for k in proc if k not in crudo)
+    check(sin_par == 0, 'toda celda evaluable de la matriz tiene su par en el crudo', str(sin_par))
 
     print('\n3. Excepcion de confidencialidad')
     fuera = [k for k, (p, q, _) in proc.items() if p == 'AUSENTE' and QV.get(q, 0) > 0 and not k[1].startswith('3_')]
