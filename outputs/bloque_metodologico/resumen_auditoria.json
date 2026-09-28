@@ -1,0 +1,19 @@
+{
+  "archivo": "../data/processed/eval.csv",
+  "correlaciones": {
+    "secciones": {
+      "rho": 0.44182621502209135,
+      "p": 0.08663481088095426,
+      "n": 16
+    },
+    "items": {
+      "rho": 0.7127208043422074,
+      "p": 3.133016250133716e-12,
+      "n": 71
+    }
+  },
+  "excepciones": {
+    "total": 29,
+    "confidencialidad_s3": 29
+  }
+}
