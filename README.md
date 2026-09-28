@@ -1,17 +1,18 @@
 # SDS — Calidad documental de fichas de datos de seguridad del sector pinturas (Colombia)
 
-Datos, código y documentación para reconstruir los resultados del manuscrito:
+Datos, código y documentación que respaldan los resultados del estudio de calidad documental de 50 fichas de datos de seguridad (FDS) de fabricantes colombianos de pinturas. Autores: Katherine Montaña-Oviedo (correspondencia) y Juan P. Ospina-Lopez. **Repositorio interno, solo para los autores**: ver *Confidencialidad* y `LICENSE`.
 
-> Montaña-Oviedo, K. y Ospina-Lopez, J. P. *Documentary Gaps in Paint-Sector Safety Data Sheets: Implications for Chemical Hazard Communication.* ACS Chemical Health & Safety, manuscrito hs-2026-00106u (reenvío, octubre de 2026).
+## Qué está congelado y qué no
 
-| | |
+| Componente | Estado |
 |---|---|
-| Versión del manuscrito que respalda | `r2_limpio`, SHA-256 `686d9e92707794e371f0fd36ae98a9fd2d0be494ccbf479a555559cc84b7971b`. El manuscrito **no** se guarda aquí |
-| Estado enviado | Etiqueta de git `reenvio-acs-2026-10` |
-| Acceso | **Interno, solo los autores.** Ver *Confidencialidad* y `LICENSE` |
-| Autores | Katherine Montaña-Oviedo (correspondencia), Juan P. Ospina-Lopez |
+| Datos (`data/`) | **Congelados.** Cada archivo se identifica por su SHA-256 (ver *Datos*) |
+| Análisis estadísticos y sus resultados | **Congelados.** `src/analisis_congelado.py` los calcula desde los datos; `src/resultados_esperados.py` fija sus valores; el verificador exige que coincidan |
+| Manuscrito | **No está en el repositorio ni anclado a él.** Su redacción, estilo, diagramación y numeración de tablas y figuras cambian entre el equipo |
 
-Las tablas se citan con su número **en `r2_limpio`**. Si el manuscrito cambia, hay que actualizar el mapa de resultados de este README.
+**Regla para el manuscrito:** cualquier cifra de cualquier versión debe coincidir con `outputs/resultados/cifras_de_referencia.md`. Si no coincide, se corrige el manuscrito, no el repositorio. Por eso este README nombra los resultados por su contenido y nunca por el número de tabla o figura.
+
+**Cambiar un análisis o un resultado** es una decisión del equipo, no una edición. Exige un commit que modifique `src/resultados_esperados.py` y explique en su mensaje qué cambió y por qué. El estado congelado actual lleva la etiqueta de git `analisis-congelado`.
 
 ## Confidencialidad
 
@@ -25,7 +26,8 @@ El estudio no revela fabricantes, productos ni composiciones, ni directa ni indi
 
 1. **`data/processed/eval.csv` es la matriz**: 50 FDS × 75 ítems, de los que 71 son evaluables. Todos los resultados salen de ella. Identifíquela por su hash, `3e153701…`, **no por su nombre**: `data/raw/eval.csv` se llama igual y es el crudo.
 2. `docs/registro_correcciones.md` explica qué cambió del crudo a la matriz (27 celdas) y por qué.
-3. `src/verificar_correcciones.py` comprueba que todo cuadra (ver *Instalación*).
+3. `outputs/resultados/cifras_de_referencia.md` reúne todas las cifras del estudio, redondeadas como se reportan. Es la hoja que hay que consultar al redactar.
+4. `src/verificar_correcciones.py` comprueba que todo cuadra (ver *Instalación*).
 
 ## Árbol
 
@@ -35,9 +37,10 @@ data/
   processed/     LA MATRIZ (eval.csv) y el diccionario de ítems
   external/      codificaciones de los dos evaluadores externos y consenso de los autores
     plantillas/  plantillas EN BLANCO que se entregaron a los evaluadores (no son datos)
-src/             verificación, cálculo de indicadores, figuras, concordancia
+src/             análisis congelados, valores esperados, verificación, figuras, concordancia
 notebooks/       crudo → matriz, análisis descriptivo, figuras exploratorias
 outputs/         resultados derivados; no se editan a mano
+  resultados/    todas las cifras del estudio (JSON completo y hoja de cifras)
 evaluation/      el instrumento, documentado por sección (cobertura parcial)
 docs/            registro de correcciones, decisiones de datos, notas y prompts de revisión
 .githooks/       gancho que ejecuta el verificador antes de cada commit
@@ -48,38 +51,55 @@ docs/            registro de correcciones, decisiones de datos, notas y prompts 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python src/verificar_correcciones.py     # debe terminar con «Todas las comprobaciones pasaron.»
+.venv/bin/python src/analisis_congelado.py         # regenera outputs/resultados/
 git config core.hooksPath .githooks                # una vez por clon: activa el gancho
 ```
 
 El verificador comprueba, sin escribir nada:
 
 1. El hash de la matriz.
-2. Las 27 correcciones frente al crudo.
+2. Las 27 correcciones frente al crudo, celda por celda.
 3. La excepción de confidencialidad de la Sección 3.
-4. La Tabla 3 y las cifras globales.
-4b. Las Tablas 1, 2 y 4 y la dispersión del puntaje global.
-5. Las codificaciones externas y la Tabla 5.
+4. La calidad y la completitud de las 16 secciones y las cifras globales.
+4b. El número de ítems por sección y dominio, la distribución por fabricante y uso, los valores de ítem citados y la dispersión del puntaje global.
+5. Las codificaciones externas y la concordancia entre evaluadores.
 6. Que `notebooks/preprocessing.ipynb` regenera la matriz bit a bit desde el crudo.
 7. Que no hay nombres comerciales en lo versionado.
+8. Que `src/analisis_congelado.py` reproduce todos los valores de `src/resultados_esperados.py`.
 
-La numeración coincide con los grupos que imprime el verificador.
+La numeración coincide con los grupos que imprime el verificador. Sale con código 0 si todo cuadra, y el gancho rechaza cualquier commit que lo rompa.
 
-Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y rechaza el commit si algo falla.
+## Resultados y dónde se calculan
 
-## De dónde sale cada resultado de `r2_limpio`
-
-| Resultado | Se calcula desde | Lo comprueba el verificador |
+| Resultado | Se calcula en | Lo protege el grupo |
 |---|---|---|
-| Tabla 1 — criterios e ítems por sección y dominio | `data/raw/tool.xlsx`, `evaluation/`; el número de ítems, de la matriz | número de ítems por sección y dominio |
-| Tabla 2 — FDS por fabricante y uso | matriz, columnas `FABRICANTE` y `USO` | sí, completa |
-| Tabla 3 — calidad, completitud y brecha por sección | matriz | calidad y completitud de las 16 secciones |
-| Tabla 4 — contenidos con baja puntuación | matriz, a nivel de ítem (también en `outputs/bloque_metodologico/items_recalculados.csv`) | los 18 ítems citados, el rango de 2.1–2.1.4 y los cinco ítems de S12 |
-| Tabla 5 — concordancia entre evaluadores | `data/external/` con `src/kappa/verificacion_concordancia.py` | acuerdos y kappas; **no** los IC |
-| Texto: media 61,6; DE 21,6; rango 28,0–92,2 | matriz, puntaje global por FDS | sí |
-| Texto: 24 configuraciones distintas | matriz | sí |
-| Resumen: ítems 4.2 (27), 4.3 (32), 8.1 (48), 15.1 (98 %, 19); 84,3 %, κ = 0,757 | los mismos cálculos de las Tablas 4 y 5 | sí |
+| Calidad, completitud y brecha por sección | `src/analisis_congelado.py` (`secciones`); también `src/auditoria_bloque_metodologico.py` | 4 y 8 |
+| Calidad y completitud por ítem; ítem más débil de cada sección | `analisis_congelado` (`items`, `brecha`) | 4b y 8 |
+| Distribución de decisiones, puntaje global, clasificación de FDS, bimodalidad y sensibilidad a los puntos de corte | `analisis_congelado` (`distribucion`) | 4, 4b y 8 |
+| Asociación entre completitud y calidad (Spearman) | `analisis_congelado` (`brecha`) | 8 |
+| Diferencias entre FDS industriales y domésticas | `analisis_congelado` (`uso`) | 8 |
+| Diferencias entre fabricantes y comparaciones por pares | `analisis_congelado` (`fabricante`) | 8 |
+| Tipologías documentales (Ward) | `analisis_congelado` (`tipologias`) | 8 |
+| Secciones críticas frente a no críticas | `analisis_congelado` (`criticas`) | 8 |
+| Índice ponderado por criticidad y escala alternativa | `analisis_congelado` (`ponderado`, `escala_alternativa`) | 8 |
+| Dominios funcionales | `analisis_congelado` (`dominios`) | 8 |
+| Sensibilidad a las configuraciones repetidas | `analisis_congelado` (`configuraciones`) | 8 |
+| Concordancia entre evaluadores: acuerdos, kappas e IC | `src/kappa/verificacion_concordancia.py` | 5 |
+| Concordancia: submuestra, sesgo frente al consenso, kappas por sección | `analisis_congelado` (`concordancia`) | 8 |
+| Criterios e ítems por sección y dominio | `data/raw/tool.xlsx`, `evaluation/`; recuento de ítems desde la matriz | 4b |
+| Corpus por año de elaboración y fabricante | `analisis_congelado` (`corpus`) | 8 |
 
-`r2_limpio` no incluye figuras en el cuerpo. Ver *Figuras*.
+### Convenciones estadísticas fijadas
+
+Cambiar cualquiera de estas cambia resultados congelados. El detalle está en la cabecera de `src/analisis_congelado.py`.
+
+- **Kruskal–Wallis** con corrección por empates. Tamaño del efecto **η²_H = (H − k + 1)/(n − k)**; no es ε².
+- **Wilcoxon** pareado, bilateral; r = Z/√n.
+- **Friedman** con W de Kendall = χ²/(n(k − 1)). **Dunn** con corrección de Bonferroni.
+- **Ward** (distancia euclidiana) sobre los puntajes de calidad por sección de las 50 FDS, con k = 3.
+- **Configuraciones repetidas:** se toma como representante la primera FDS de cada configuración según la columna `FDS`.
+- **Clasificación de FDS:** ≥ 66,7 confiable; ≥ 33,3 con restricciones; < 33,3 no confiable.
+- **IQR** con interpolación lineal.
 
 ## Glosario
 
@@ -90,10 +110,10 @@ Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y r
 - **Calidad de un ítem**: media de 100 / 50 / 0 sobre las 50 FDS. **Completitud de un ítem**: porcentaje de FDS en que está `PRESENTE`.
 - **Calidad y completitud de una sección**: media, sin ponderar, de sus ítems evaluables.
 - **Brecha**: completitud − calidad, en puntos. Una brecha grande indica que el contenido está pero se califica bajo.
-- **Dominio**: agrupación de secciones de la Tabla 1. G1 = S1–S3, G2 = S4–S6, G3 = S7–S8, G4 = S9–S12, G5 = S13–S16. Su valor es la media de sus secciones.
-- **Sección crítica (★)**: S2, S4, S8 y S11, las de mayor relevancia para la salud ocupacional.
+- **Dominio**: agrupación analítica de secciones. G1 = S1–S3, G2 = S4–S6, G3 = S7–S8, G4 = S9–S12, G5 = S13–S16. Su valor es la media de sus secciones.
+- **Sección crítica**: S2, S4, S8 y S11, las de mayor relevancia para la salud ocupacional.
 - **Puntaje global de una FDS**: media, sin ponderar, de sus 16 puntajes de calidad por sección.
-- **Configuración documental**: el vector completo de presencia y calidad de una FDS. Dos FDS con el mismo vector comparten configuración: es un patrón de puntuaciones, **no** prueba de que los documentos sean idénticos.
+- **Configuración documental**: el vector completo de presencia y calidad de una FDS. Las 50 FDS tienen 24 configuraciones distintas. Dos FDS con el mismo vector comparten configuración: es un patrón de puntuaciones, **no** prueba de que los documentos sean idénticos.
 - **Excepción de confidencialidad**: en S3, un ítem `AUSENTE` puede tener calidad positiva porque se califica cómo se trata la información reservada. Son 29 decisiones en 11 FDS. Fuera de S3 esa combinación no existe.
 - **Submuestra de concordancia**: 15 FDS × 71 ítems = 1.065 juicios por codificación.
 
@@ -108,7 +128,7 @@ Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y r
 | `data/processed/diccionario_items.csv` | `d513f3d6ba54b640` | Identificador, sección y descripción de los 71 ítems evaluables |
 | `data/external/eval_1.csv` | `d69c39637bd96570` | Codificación del evaluador externo 1 (15 FDS) |
 | `data/external/eval_2.csv` | `9b9f4ae8b21c0ec6` | Codificación del evaluador externo 2 (15 FDS) |
-| `data/external/eval_original.csv` | `ddf015b57a905cc0` | **Consenso de los autores** para esas 15 FDS. Es **anterior a 11 correcciones de presencia** que sí tiene la matriz: 11 ítems fuera de S3 figuran como `AUSENTE` con calidad positiva. La Tabla 5 se reproduce leyéndolos como `PRESENTE`, que es la misma regla aplicada a la matriz (escenario 2 de `src/kappa/verificacion_concordancia.py`) |
+| `data/external/eval_original.csv` | `ddf015b57a905cc0` | **Consenso de los autores** para esas 15 FDS. Es **anterior a 11 correcciones de presencia** que sí tiene la matriz: 11 ítems fuera de S3 figuran como `AUSENTE` con calidad positiva. La concordancia se reproduce leyéndolos como `PRESENTE`, que es la misma regla aplicada a la matriz (escenario 2 de `src/kappa/verificacion_concordancia.py`) |
 | `data/external/plantillas/` | — | Plantillas **en blanco** entregadas a los evaluadores y su instructivo (`LEEME.txt`). **No son datos** |
 
 `data/raw/eval.csv` y `data/processed/eval.csv` se llaman igual y **no** son el mismo archivo. En `data/external/`, «original» no significa «el crudo».
@@ -117,7 +137,7 @@ Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y r
 
 | Columna | Contenido |
 |---|---|
-| `FDS` | Número de fila de la codificación. **No** identifica la FDS |
+| `FDS` | Número de fila de la codificación; también define el orden de compilación. **No** identifica la FDS |
 | `ELABORADA` | Fecha de elaboración de la FDS (2016–2020) |
 | `ID` | **Identificador de la FDS**: `F01-P01-I` = fabricante 01, producto 01, uso industrial (`-D` = doméstico) |
 | `FABRICANTE` | `F01`–`F08` |
@@ -134,36 +154,46 @@ Sale con código 0 si todo cuadra. El gancho lo ejecuta antes de cada commit y r
 ## Correcciones y decisiones
 
 - `docs/registro_correcciones.md`: las **27 diferencias** entre el crudo y la matriz (26 de presencia y 1 de calidad), con FDS, ítem, valor anterior y valor final. Las 27 están programadas en `notebooks/preprocessing.ipynb`. La de calidad comprueba el valor anterior antes de cambiarlo; las 26 de presencia solo comprueban que la FDS exista. El verificador (grupo 2) exige que las celdas que difieren entre crudo y matriz sean exactamente las 27 del registro, con sus valores anterior y final.
-- `docs/PLAN_EDITORIAL_CON_CONTROLES.md`: **pese a su nombre**, es el registro de las decisiones de datos del 16 de septiembre de 2026, con el hash de la matriz y de las codificaciones y la semilla. Es un documento histórico: sus instrucciones de edición se refieren a una versión anterior del manuscrito (v8_7).
+- `docs/PLAN_EDITORIAL_CON_CONTROLES.md`: **pese a su nombre**, es el registro de las decisiones de datos del 16 de septiembre de 2026, con el hash de la matriz y de las codificaciones y la semilla. Es un documento histórico: sus instrucciones de edición se refieren a una versión anterior del manuscrito.
 
 ## Código
 
 | Ruta | Qué hace |
 |---|---|
+| `src/analisis_congelado.py` | **Calcula todos los resultados estadísticos** desde los datos y escribe `outputs/resultados/` |
+| `src/resultados_esperados.py` | **Fija los valores congelados** (unos 300). Solo cambia por decisión explícita del equipo |
 | `src/verificar_correcciones.py` | Verifica la cadena completa (ver *Instalación*) |
-| `src/auditoria_bloque_metodologico.py` | **Cálculo principal** de calidad, completitud y brecha por ítem, sección y dominio; compara dos matrices si se le da `--antes` |
+| `src/auditoria_bloque_metodologico.py` | Calidad, completitud y brecha por ítem, sección y dominio, con correlaciones; compara dos matrices si se le da `--antes` |
 | `src/auditoria_impacto_calidad_1_2.py` | Compara indicadores antes y después de la corrección de calidad de F03-P03-D, ítem 1.2 |
-| `src/generar_figuras_completitud_actualizadas.py` | Figuras de las versiones v8 del manuscrito → `outputs/bloque_metodologico/figuras/`. Lo invoca `notebooks/figuras_articulo.ipynb` |
-| `src/kappa/verificacion_concordancia.py` | **Reproduce la Tabla 5**: `python3 src/kappa/verificacion_concordancia.py data/external/eval_1.csv data/external/eval_2.csv data/external/eval_original.csv` |
+| `src/generar_figuras_completitud_actualizadas.py` | Genera las figuras de `outputs/bloque_metodologico/figuras/` (ver *Figuras*). Lo invoca `notebooks/figuras_articulo.ipynb` |
+| `src/kappa/verificacion_concordancia.py` | **Reproduce la concordancia entre evaluadores**: `python3 src/kappa/verificacion_concordancia.py data/external/eval_1.csv data/external/eval_2.csv data/external/eval_original.csv` |
 | `src/kappa/` (los otros 5) | Scripts **heredados** de la selección de la submuestra, las plantillas y cálculos previos. Registro del método: **no se ejecutan tal cual** (ver su cabecera) |
 | `notebooks/preprocessing.ipynb` | Crudo → matriz y diccionario. Ejecutar desde `notebooks/` |
-| `notebooks/EDA.ipynb` | Análisis descriptivo |
-| `notebooks/figuras_articulo.ipynb` | Figuras exploratorias → `outputs/figuras_articulo/`, y llamada al generador de figuras v8. Ejecutar desde `notebooks/` |
+| `notebooks/EDA.ipynb` | Análisis descriptivo exploratorio |
+| `notebooks/figuras_articulo.ipynb` | Figuras exploratorias → `outputs/figuras_articulo/`, y llamada al generador de figuras. Ejecutar desde `notebooks/` |
 
-**Semillas.** Los intervalos de la Tabla 5 usan `20260916`: percentiles 2,5 y 97,5 de 2.000 remuestreos **por FDS completa**, no por ítem. El resto del código conserva las semillas originales: `314159`, `1000+i` y `42` en las figuras; `1496` en `kappa_analysis.py`; `2026` en la selección de la submuestra. **No se unificaron**, porque hacerlo cambiaría figuras ya producidas.
+**Semillas.** Los intervalos de confianza de la concordancia usan `20260916`: percentiles 2,5 y 97,5 de 2.000 remuestreos **por FDS completa**, no por ítem. El resto del código conserva las semillas originales: `314159`, `1000+i` y `42` en las figuras; `1496` en `kappa_analysis.py`; `2026` en la selección de la submuestra. **No se unificaron**, porque hacerlo cambiaría figuras ya producidas. `src/analisis_congelado.py` no usa azar.
 
 ## Salidas
 
 Todo lo de `outputs/` es **derivado** y no se edita a mano.
 
-- `outputs/bloque_metodologico/`: recálculos por ítem, sección y dominio (`*_recalculados.csv`), las 29 excepciones de S3 (`excepciones_confidencialidad.csv`) y las correlaciones (`resumen_auditoria.json`; no se reportan en `r2_limpio`). Se regeneran con `cd notebooks && python ../src/auditoria_bloque_metodologico.py ../data/processed/eval.csv --salida <carpeta>`.
+- `outputs/resultados/`: `resultados_congelados.json`, con todos los valores sin redondear, y `cifras_de_referencia.md`, con los mismos valores redondeados como se reportan. Se regeneran con `src/analisis_congelado.py`.
+- `outputs/bloque_metodologico/`: recálculos por ítem, sección y dominio (`*_recalculados.csv`), las 29 excepciones de S3 (`excepciones_confidencialidad.csv`) y las correlaciones de Spearman (`resumen_auditoria.json`). Se regeneran con `cd notebooks && python ../src/auditoria_bloque_metodologico.py ../data/processed/eval.csv --salida <carpeta>`.
 - `outputs/bloque_metodologico/cambios_*.csv` y `impacto_1_2/cambios_*.csv`: el efecto de las correcciones en dos pasos (primero las 21 de presencia, después la de calidad). Cómo se obtuvieron: `docs/salidas_cambios.md`. Los otros cuatro archivos de `impacto_1_2/` son **idénticos** a los de la carpeta madre.
 
 ### Figuras
 
-- **`r2_limpio` no tiene figuras en el cuerpo.** Su único gráfico es el del índice (*Table of Contents*), que se preparó fuera del repositorio: **su fuente no está aquí**.
-- `outputs/bloque_metodologico/figuras/`: `Figure_1_updated.png` … `Figure_4_updated.png` y `Figure_6_updated.png` son figuras de las versiones v8 del manuscrito. Las cuatro primeras son idénticas a imágenes que el archivo `r2_limpio` conserva sin mostrar. No hay `Figure_5`.
-- `outputs/figuras_articulo/`: **pese al nombre**, son figuras exploratorias del cuaderno. Ninguna aparece en `r2_limpio`.
+Las figuras muestran resultados congelados, pero su diseño puede cambiar con el manuscrito. Los nombres de archivo son históricos: **el número que llevan no es el de la figura en el manuscrito vigente**.
+
+- `outputs/bloque_metodologico/figuras/`, generadas por `src/generar_figuras_completitud_actualizadas.py`:
+  - `Figure_1_updated.png`: completitud y categorías de calidad por sección;
+  - `Figure_2_updated.png`: cuadrantes completitud–calidad por sección;
+  - `Figure_3_updated.png`: calidad por tipo de uso;
+  - `Figure_4_updated.png`: puntaje global por fabricante;
+  - `Figure_6_updated.png`: versión anterior de la figura de dominios funcionales.
+- **Sin fuente en el repositorio:** la figura de tipologías (mapa de calor por grupo de Ward), la versión actual de la figura de dominios funcionales y el gráfico del índice (*Table of Contents*).
+- `outputs/figuras_articulo/`: **pese al nombre**, son figuras exploratorias del cuaderno.
 
 ## Instrumento
 
@@ -175,13 +205,15 @@ Todo lo de `outputs/` es **derivado** y no se edita a mano.
 
 ## Convenciones
 
+- **El manuscrito se ajusta al repositorio, no al revés.** Toda cifra citada sale de `outputs/resultados/cifras_de_referencia.md`.
 - **Un archivo, un nombre, un lugar.** Ninguna plantilla puede llamarse igual que un dato.
 - `data/raw/` es inmutable. Toda corrección se programa en el preprocesamiento y se anota en el registro.
 - `outputs/` es derivado; no se edita a mano.
-- Antes de cada entrega: ejecutar el verificador, comitear y etiquetar el estado entregado.
+- Antes de cada entrega del manuscrito: ejecutar el verificador y regenerar la hoja de cifras.
 
 ## Pendiente
 
+- Aportar el código de las figuras que no tienen fuente en el repositorio (ver *Figuras*).
 - Documentar el instrumento de S4–S8 y S12–S16.
 - `notebooks/EDA - SDS/` (ignorada por git): borradores antiguos y artículos de terceros que deben archivarse fuera.
-- Renombrar los archivos y carpetas cuyo nombre induce a error (planificado para después del reenvío).
+- Renombrar los archivos y carpetas cuyo nombre induce a error.
