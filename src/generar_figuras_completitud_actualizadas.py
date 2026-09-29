@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from scipy import stats
+from analisis_congelado import kw
 
 matplotlib.use("Agg")
 
@@ -234,9 +235,9 @@ def figura_3(df, completitud, sec_scores, distribucion):
     for i, (values, color) in enumerate([(industrial, "#287ab8"), (household, "#76529b")]):
         ax_a.scatter(i + rng.normal(0, 0.055, len(values)), values, s=20,
                      facecolor=color, edgecolor="white", linewidth=0.5, alpha=0.85, zorder=3)
-    h, p = stats.kruskal(industrial, household)
-    epsilon = (h - 1) / 48
-    ax_a.text(0.5, 103, f"H={h:.2f}, p<0.001\nε²={epsilon:.3f} (large effect)",
+    result = kw(industrial, household)
+    h, p, eta = result['H'], result['p'], result['eta2_H']
+    ax_a.text(0.5, 103, f"H={h:.2f}, p<0.001\n" + rf"$\eta_H^2$={eta:.3f} (large effect)",
               ha="center", va="top", fontsize=7.5,
               bbox={"facecolor": "white", "edgecolor": "#cccccc", "boxstyle": "round,pad=0.3"})
     ax_a.set_ylim(-5, 112)

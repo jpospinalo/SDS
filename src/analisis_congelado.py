@@ -13,8 +13,12 @@ Convenciones fijadas (no cambiar: cambiarlas cambia resultados congelados):
   - Calidad: CONFIABLE 100, CONFI_RESTR 50, NO_CONFIABLE 0. NO_APLICA fuera del denominador.
   - Puntaje de seccion por FDS = media de sus items; puntaje global = media de las 16 secciones.
   - Clasificacion de FDS: >= 66.7 confiable; >= 33.3 con restricciones; < 33.3 no confiable.
-  - Kruskal-Wallis con correccion por empates (scipy); tamano de efecto eta2_H = (H - k + 1)/(n - k).
-  - Wilcoxon pareado (scipy, bilateral); r = Z/sqrt(n) con Z = isf(p/2).
+  - Entradas de pruebas de rangos normalizadas a 10 decimales para conservar empates
+    matematicos. Control independiente con fracciones exactas en verificar_convenciones.py.
+    No se redondean los puntajes descriptivos ni las entradas del clustering.
+  - Kruskal-Wallis con correccion por empates (scipy); eta2_H = (H - k + 1)/(n - k).
+  - Wilcoxon bilateral asintotico, zero_method=wilcox, sin correccion de continuidad;
+    r = abs(zstatistic)/sqrt(n_no_cero). Diferencias normalizadas antes de asignar rangos.
   - Friedman; W de Kendall = chi2 / (n (k - 1)).
   - Dunn con correccion de Bonferroni (scikit-posthocs).
   - Ward (scipy, euclidea) sobre la matriz 50 x 16 de puntajes de calidad por seccion; k = 3.
@@ -77,15 +81,29 @@ def cargar():
     return rows, cols, valida, pd.DataFrame(recs)
 
 
+def rangos_estables(x):
+    """Elimina ruido binario sub-1e-10; no es redondeo para presentacion."""
+    a = np.asarray(x, dtype=float)
+    if not np.isfinite(a).all():
+        raise ValueError('Las pruebas de rangos requieren valores finitos')
+    return np.round(a, 10)
+
+
 def kw(*grupos):
-    H, p = stats.kruskal(*grupos)
+    H, p = stats.kruskal(*[rangos_estables(g) for g in grupos])
     n = sum(len(g) for g in grupos); k = len(grupos)
     return {'H': float(H), 'p': float(p), 'eta2_H': float((H - k + 1) / (n - k)), 'n': n, 'k': k}
 
 
 def wilcoxon(a, b):
-    r = stats.wilcoxon(a, b); z = stats.norm.isf(r.pvalue / 2)
-    return {'W': float(r.statistic), 'p': float(r.pvalue), 'r': float(z / np.sqrt(len(a))), 'n': len(a)}
+    delta = rangos_estables(np.asarray(a, dtype=float) - np.asarray(b, dtype=float))
+    nn = int(np.count_nonzero(delta))
+    if nn == 0:
+        raise ValueError('Wilcoxon asintotico no definido: todas las diferencias son cero')
+    r = stats.wilcoxon(delta, alternative='two-sided', method='asymptotic',
+                       zero_method='wilcox', correction=False)
+    return {'W': float(r.statistic), 'p': float(r.pvalue),
+            'r': float(abs(r.zstatistic) / np.sqrt(nn)), 'n': len(a), 'n_no_cero': nn}
 
 
 def dominios(d):
@@ -93,7 +111,7 @@ def dominios(d):
 
 
 def friedman(d):
-    m = dominios(d); f = stats.friedmanchisquare(*[m[g] for g in m])
+    m = dominios(d); f = stats.friedmanchisquare(*[rangos_estables(m[g]) for g in m])
     return {'chi2': float(f.statistic), 'p': float(f.pvalue), 'W_kendall': float(f.statistic / (len(d) * (len(DOM) - 1))), 'n': len(d)}
 
 
@@ -148,8 +166,8 @@ def calcular():
         v['brecha'] = v['completitud'] - v['calidad']
     # --- C: brecha
     sc = [R['secciones'][f'S{s}'] for s in range(1, 17)]
-    rs = stats.spearmanr([v['completitud'] for v in sc], [v['calidad'] for v in sc])
-    ri = stats.spearmanr([v['completitud'] for v in it.values()], [v['calidad'] for v in it.values()])
+    rs = stats.spearmanr(rangos_estables([v['completitud'] for v in sc]), rangos_estables([v['calidad'] for v in sc]))
+    ri = stats.spearmanr(rangos_estables([v['completitud'] for v in it.values()]), rangos_estables([v['calidad'] for v in it.values()]))
     R['brecha'] = {'spearman_secciones': {'rho': float(rs.statistic), 'p': float(rs.pvalue), 'n': 16},
                    'spearman_items': {'rho': float(ri.statistic), 'p': float(ri.pvalue), 'n': len(it)},
                    'items_presencia_ge_90': sum(v['completitud'] >= 90 for v in it.values()),
@@ -171,7 +189,7 @@ def calcular():
                                                for f in sorted(df.FAB.unique()) if df[df.FAB == f].USO.nunique() == 2}}
     # --- E: fabricante
     grupos = [df[df.FAB == f].global_ for f in sorted(df.FAB.unique())]
-    dn = sp.posthoc_dunn(df, val_col='global_', group_col='FAB', p_adjust='bonferroni')
+    dn = sp.posthoc_dunn(df.assign(global_=rangos_estables(df.global_)), val_col='global_', group_col='FAB', p_adjust='bonferroni')
     R['fabricante'] = {**kw(*grupos), 'media': df.groupby('FAB').global_.mean().to_dict(), 'de': df.groupby('FAB').global_.std().to_dict(),
                        'dunn_bonferroni_pares_p_lt_05': [[a, b] for i, a in enumerate(dn.index) for b in dn.columns[i + 1:] if dn.loc[a, b] < 0.05]}
     # --- F: tipologias
@@ -210,8 +228,8 @@ def calcular():
         for s in range(1, 17):
             per = [np.mean([qv.get(r['CALIDAD_' + c].strip(), 0.0) for c in cols if int(c.split('_')[0]) == s and valida(r, c)]) for r in rows]
             sec.append(float(np.mean(per)))
-        esc[str(alt)] = {'spearman_con_orden_base': float(stats.spearmanr(sec, base_sec).statistic),
-                         'orden_identico': [int(i) for i in np.argsort(sec)] == [int(i) for i in np.argsort(base_sec)]}
+        esc[str(alt)] = {'spearman_con_orden_base': float(stats.spearmanr(rangos_estables(sec), rangos_estables(base_sec)).statistic),
+                         'orden_identico': bool(np.array_equal(stats.rankdata(rangos_estables(sec)), stats.rankdata(rangos_estables(base_sec))))}
     R['escala_alternativa'] = esc
     # --- I: dominios
     m = dominios(df); dom = {}
@@ -265,7 +283,7 @@ def calcular():
     R['concordancia'] = {
         'submuestra': {'fds': len(ids), 'fabricantes': int(sub.FAB.nunique()), 'configuraciones': int(sub.cfg.nunique()), 'usos': dict(Counter(sub.USO))},
         'distribucion_consenso_pct': {'confiable': 100 * dist[2] / len(keys), 'con_restricciones': 100 * dist[1] / len(keys), 'no_confiable': 100 * dist[0] / len(keys)},
-        'evaluador_menos_consenso': {e: {'diferencia_media': float(np.mean([p[i] - pc[i] for i in ids])), 'wilcoxon_p': float(stats.wilcoxon([p[i] for i in ids], [pc[i] for i in ids]).pvalue)}
+        'evaluador_menos_consenso': {e: {'diferencia_media': float(np.mean([p[i] - pc[i] for i in ids])), 'wilcoxon_p': wilcoxon([p[i] for i in ids], [pc[i] for i in ids])['p']}
                                      for e, p in (('E1', p1), ('E2', p2))},
         'kappa_calidad_por_seccion': ksec, 'secciones_kappa_ge_060': sum(v >= 0.60 for v in ksec.values()),
         'tres_secciones_kappa_mas_bajo': sorted(ksec, key=ksec.get)[:3],
@@ -277,6 +295,11 @@ def calcular():
 
 def r(x, d=1):
     return f'{x:.{d}f}'
+
+
+def ptexto(x, d=3):
+    """Nunca presentar un p positivo como cero por redondeo."""
+    return f'< {10**(-d):.{d}f}' if 0 < x < 10**(-d) else r(x, d)
 
 
 def cifras(R):
@@ -301,7 +324,7 @@ def cifras(R):
           f"- 24 configuraciones: {r(G['24_configuraciones']['criticas_media'])} vs {r(G['24_configuraciones']['no_criticas_media'])}; W = {r(G['24_configuraciones']['W'],0)}, p = {r(G['24_configuraciones']['p'],3)}, r = {r(G['24_configuraciones']['r'],3)}",
           '', '## Indice ponderado'] + [f"- w = {w}: media {r(v['media'])}, reclasificadas {v['reclasificadas']} {v['transiciones']}" for w, v in R['ponderado'].items()]
     L += [f"- Escala alternativa {k}: rho con el orden base {r(v['spearman_con_orden_base'],3)}; orden identico: {v['orden_identico']}" for k, v in R['escala_alternativa'].items()]
-    L += ['', '## Dominios'] + [f"- {g}: {r(v['media'])} ± {r(v['de'])}; industrial {r(v['industrial'])}, domestico {r(v['domestico'])}, diferencia {r(v['diferencia'])}, brecha {r(v['brecha'])}; KW uso H = {r(v['kw_uso_H'],2)}, p = {r(v['kw_uso_p'],3)}, eta2_H = {r(v['kw_uso_eta2_H'],3)}" for g, v in I['por_dominio'].items()]
+    L += ['', '## Dominios'] + [f"- {g}: {r(v['media'])} ± {r(v['de'])}; industrial {r(v['industrial'])}, domestico {r(v['domestico'])}, diferencia {r(v['diferencia'])}, brecha {r(v['brecha'],2)}; KW uso H = {r(v['kw_uso_H'],2)}, p {ptexto(v['kw_uso_p'],3)}, eta2_H = {r(v['kw_uso_eta2_H'],3)}" for g, v in I['por_dominio'].items()]
     L += [f"- Friedman 50 FDS: chi2 = {r(I['friedman_50_fds']['chi2'],2)}, p = {r(I['friedman_50_fds']['p'],4)}, W = {r(I['friedman_50_fds']['W_kendall'],3)}; 24 configuraciones: p = {r(I['friedman_24_configuraciones']['p'],4)}, W = {r(I['friedman_24_configuraciones']['W_kendall'],3)}"]
     L += [f"- Wilcoxon {k}: W = {r(v['W'],0)}, p = {r(v['p'],4)}, r = {r(v['r'],3)}" for k, v in I['wilcoxon_pares'].items()]
     K = R['configuraciones']

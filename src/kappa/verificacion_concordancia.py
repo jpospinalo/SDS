@@ -20,9 +20,10 @@ import csv, sys, numpy as np
 PRES = {'PRESENTE', 'AUSENTE'}
 Q = {'NO_CONFIABLE': 0, 'CONFIABLE_CON_RESTRICCIONES': 1, 'CONFIABLE': 2}
 VAL = {0: 0.0, 1: 50.0, 2: 100.0}
-PUB = {'E1-E2':       {'comp': (92.0, 0.775, '0.688-0.834'), 'cal': (84.3, 0.757, '0.690-0.812')},
-       'E1-consenso': {'comp': (95.1, 0.854, '0.792-0.898'), 'cal': (90.4, 0.842, '0.777-0.891')},
-       'E2-consenso': {'comp': (95.0, 0.853, '0.794-0.892'), 'cal': (89.6, 0.836, '0.783-0.876')}}
+# Referencia reproducible: 2000 replicas por FDS, default_rng(20260916).
+PUB = {'E1-E2':       {'comp': (92.0, 0.775, '0.690-0.833'), 'cal': (84.3, 0.757, '0.694-0.809')},
+       'E1-consenso': {'comp': (95.1, 0.854, '0.788-0.897'), 'cal': (90.4, 0.842, '0.781-0.888')},
+       'E2-consenso': {'comp': (95.0, 0.853, '0.799-0.892'), 'cal': (89.6, 0.836, '0.789-0.873')}}
 
 def load(path, flip=False):
     d, dup = {}, []
@@ -149,8 +150,9 @@ def main(f1, f2, fo, boot=True):
           f'(en S3: {len(anom)-len(fuera)}, fuera de S3: {len(fuera)})')
     bloque(E1, E2, base, 'ESCENARIO 1 - los CSV tal como estan', boot)
     bloque(E1, E2, load(fo, True), 'ESCENARIO 2 - los de fuera de S3 leidos como PRESENTE', boot)
-    print('\nNinguno de los dos escenarios se propone aqui como el correcto: la eleccion')
-    print('depende del registro de revision, no de cual reproduce las cifras publicadas.')
+    print('\nEl escenario 2 es el adoptado en el repositorio: aplica a las 11 decisiones')
+    print('fuera de S3 la regla de presencia documentada en docs/registro_correcciones.md.')
+    print('El escenario 1 se conserva como contraste historico; no es otra matriz final.')
 
 if __name__ == '__main__':
     main(*sys.argv[1:4], boot='--sin-bootstrap' not in sys.argv)

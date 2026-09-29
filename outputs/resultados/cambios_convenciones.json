@@ -1,0 +1,232 @@
+[
+  {
+    "resultado": "/fabricante/H",
+    "antes": 45.95753114658357,
+    "despues": 45.96647926401865
+  },
+  {
+    "resultado": "/fabricante/eta2_H",
+    "antes": 0.9275602653948469,
+    "despues": 0.9277733158099679
+  },
+  {
+    "resultado": "/fabricante/p",
+    "antes": 8.909900716124411e-08,
+    "despues": 8.874253504208222e-08
+  },
+  {
+    "resultado": "/criticas/50_fds/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/criticas/24_configuraciones/p",
+    "antes": 0.6431422233581543,
+    "despues": 0.6271697535393987
+  },
+  {
+    "resultado": "/criticas/24_configuraciones/n_no_cero",
+    "antes": null,
+    "despues": 24
+  },
+  {
+    "resultado": "/criticas/24_configuraciones/r",
+    "antes": 0.09457274507271507,
+    "despues": 0.09914601339836673
+  },
+  {
+    "resultado": "/configuraciones/fabricante_24/H",
+    "antes": 20.489999999999995,
+    "despues": 20.50783289817232
+  },
+  {
+    "resultado": "/configuraciones/fabricante_24/eta2_H",
+    "antes": 0.8431249999999997,
+    "despues": 0.8442395561357701
+  },
+  {
+    "resultado": "/configuraciones/fabricante_24/p",
+    "antes": 0.004603070035814767,
+    "despues": 0.004571148363248369
+  },
+  {
+    "resultado": "/configuraciones/uso_24/H",
+    "antes": 11.487272727272725,
+    "despues": 11.301575708886409
+  },
+  {
+    "resultado": "/configuraciones/uso_24/eta2_H",
+    "antes": 0.4766942148760329,
+    "despues": 0.4682534413130186
+  },
+  {
+    "resultado": "/configuraciones/uso_24/p",
+    "antes": 0.0007007438615097197,
+    "despues": 0.0007744134076678801
+  },
+  {
+    "resultado": "/configuraciones/uso_representantes_alternativos/eta2_H_max",
+    "antes": 0.6759090909090911,
+    "despues": 0.6661111770445981
+  },
+  {
+    "resultado": "/configuraciones/uso_representantes_alternativos/eta2_H_min",
+    "antes": 0.46424242424242446,
+    "despues": 0.455928409420577
+  },
+  {
+    "resultado": "/configuraciones/uso_representantes_alternativos/p_max",
+    "antes": 0.0008121171348941261,
+    "despues": 0.0008962859670651525
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G5/r",
+    "antes": 0.01641239067536136,
+    "despues": 0.009576974144653312
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G5/W",
+    "antes": 625.5,
+    "despues": 630.5
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G5/p",
+    "antes": 0.9076104366171155,
+    "despues": 0.9460089790394267
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G5/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G1-G2/r",
+    "antes": 0.02871597690908202,
+    "despues": 0.028715976909082022
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G1-G2/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G4/r",
+    "antes": 0.37421750290040834,
+    "despues": 0.3780167627708217
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G4/n_no_cero",
+    "antes": null,
+    "despues": 49
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G4-G5/r",
+    "antes": 0.3070538603672885,
+    "despues": 0.30705386036728843
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G4-G5/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G1-G3/r",
+    "antes": 0.22230701029533353,
+    "despues": 0.2223070102953336
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G1-G3/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G3/r",
+    "antes": 0.12381366432974991,
+    "despues": 0.12004047032861571
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G3/W",
+    "antes": 481.5,
+    "despues": 486.5
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G3/p",
+    "antes": 0.3813047293817903,
+    "despues": 0.4105330138340316
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G2-G3/n_no_cero",
+    "antes": null,
+    "despues": 47
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G3-G4/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G3-G5/r",
+    "antes": 0.005832195925560923,
+    "despues": 0.005952460040651374
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G3-G5/n_no_cero",
+    "antes": null,
+    "despues": 48
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G1-G4/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G1-G5/r",
+    "antes": 0.09648824541221468,
+    "despues": 0.09648824541221467
+  },
+  {
+    "resultado": "/dominios/wilcoxon_pares/G1-G5/n_no_cero",
+    "antes": null,
+    "despues": 50
+  },
+  {
+    "resultado": "/concordancia/spearman_kappa_vs_calidad_seccion/p",
+    "antes": 0.4406214433408528,
+    "despues": 0.440621443340853
+  },
+  {
+    "resultado": "/concordancia/evaluador_menos_consenso/E2/wilcoxon_p",
+    "antes": 6.103515625e-05,
+    "despues": 0.0006549583433856956
+  },
+  {
+    "resultado": "/brecha/spearman_items/p",
+    "antes": 3.1330162501337167e-12,
+    "despues": 3.133016250133716e-12
+  },
+  {
+    "resultado": "/uso/shapiro_p_domestico",
+    "antes": 0.0013387129149164828,
+    "despues": 0.0013387129149164945
+  },
+  {
+    "resultado": "/uso/H",
+    "antes": 16.269964960093404,
+    "despues": 16.194423676012438
+  },
+  {
+    "resultado": "/uso/eta2_H",
+    "antes": 0.31812427000194593,
+    "despues": 0.31655049325025914
+  },
+  {
+    "resultado": "/uso/p",
+    "antes": 5.492774562090238e-05,
+    "despues": 5.716213516972297e-05
+  },
+  {
+    "resultado": "/uso/shapiro_p_industrial",
+    "antes": 0.0001054510923638709,
+    "despues": 0.00010545109236386997
+  }
+]

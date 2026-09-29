@@ -95,13 +95,16 @@ La numeración coincide con los grupos que imprime el verificador. Sale con cód
 
 Cambiar cualquiera de estas cambia resultados congelados. El detalle está en la cabecera de `src/analisis_congelado.py`.
 
+- **Empates:** entradas de pruebas de rangos normalizadas a 10 decimales; comprobación independiente contra fracciones exactas con `src/verificar_convenciones.py`. No se redondean los descriptivos ni las entradas de Ward.
 - **Kruskal–Wallis** con corrección por empates. Tamaño del efecto **η²_H = (H − k + 1)/(n − k)**; no es ε².
-- **Wilcoxon** pareado, bilateral; r = Z/√n.
+- **Wilcoxon** pareado, bilateral y asintótico, `zero_method='wilcox'`, sin corrección de continuidad; r = |z|/√n_no_cero, usando el z estandarizado del mismo cálculo.
 - **Friedman** con W de Kendall = χ²/(n(k − 1)). **Dunn** con corrección de Bonferroni.
 - **Ward** (distancia euclidiana) sobre los puntajes de calidad por sección de las 50 FDS, con k = 3.
 - **Configuraciones repetidas:** se toma como representante la primera FDS de cada configuración según la columna `FDS`.
 - **Clasificación de FDS:** ≥ 66,7 confiable; ≥ 33,3 con restricciones; < 33,3 no confiable.
 - **IQR** con interpolación lineal.
+
+El ajuste autorizado del 28 de septiembre conserva todas las matrices y queda explicado en `docs/convenciones_estadisticas_20260928.md`. La etiqueta `analisis-congelado` identifica el estado anterior y no se mueve. Ejecutar también `python src/verificar_convenciones.py` antes de una entrega. Las once revisiones de valores esperados tienen justificación individual; no son ajustes de datos para coincidir con un manuscrito.
 
 ## Glosario
 
