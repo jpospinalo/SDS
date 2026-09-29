@@ -66,7 +66,7 @@ El verificador comprueba, sin escribir nada:
 4b. El número de ítems por sección y dominio, la distribución por fabricante y uso, los valores de ítem citados y la dispersión del puntaje global.
 5. Las codificaciones externas y la concordancia entre evaluadores.
 6. Que `notebooks/preprocessing.ipynb` regenera la matriz bit a bit desde el crudo.
-7. Que no hay nombres comerciales en lo versionado.
+7. Que no hay nombres comerciales en lo versionado, ni imágenes con marcas de IA generativa (C2PA).
 8. Que `src/analisis_congelado.py` reproduce todos los valores de `src/resultados_esperados.py`.
 
 La numeración coincide con los grupos que imprime el verificador. Sale con código 0 si todo cuadra, y el gancho rechaza cualquier commit que lo rompa.
@@ -171,6 +171,7 @@ El ajuste autorizado del 28 de septiembre conserva todas las matrices y queda ex
 | `src/auditoria_bloque_metodologico.py` | Calidad, completitud y brecha por ítem, sección y dominio, con correlaciones; compara dos matrices si se le da `--antes` |
 | `src/auditoria_impacto_calidad_1_2.py` | Compara indicadores antes y después de la corrección de calidad de F03-P03-D, ítem 1.2 |
 | `src/generar_figuras_completitud_actualizadas.py` | Genera las figuras de `outputs/bloque_metodologico/figuras/` (ver *Figuras*). Lo invoca `notebooks/figuras_articulo.ipynb` |
+| `src/generar_grafico_toc.py` | Genera el gráfico del índice (*Table of Contents*) en `outputs/bloque_metodologico/figuras/` (ver *Figuras*) |
 | `src/kappa/verificacion_concordancia.py` | **Reproduce la concordancia entre evaluadores**: `python3 src/kappa/verificacion_concordancia.py data/external/eval_1.csv data/external/eval_2.csv data/external/eval_original.csv` |
 | `src/kappa/` (los otros 5) | Scripts **heredados** de la selección de la submuestra, las plantillas y cálculos previos. Registro del método: **no se ejecutan tal cual** (ver su cabecera) |
 | `notebooks/preprocessing.ipynb` | Crudo → matriz y diccionario. Ejecutar desde `notebooks/` |
@@ -197,7 +198,8 @@ Las figuras muestran resultados congelados, pero su diseño puede cambiar con el
   - `Figure_3_updated.png`: calidad por tipo de uso;
   - `Figure_4_updated.png`: puntaje global por fabricante;
   - `Figure_6_updated.png`: versión anterior de la figura de dominios funcionales.
-- **Sin fuente en el repositorio:** la figura de tipologías (mapa de calor por grupo de Ward), la versión actual de la figura de dominios funcionales y el gráfico del índice (*Table of Contents*).
+- `outputs/bloque_metodologico/figuras/TOC_graphic.png` y `.pdf`: gráfico del índice (*Table of Contents*), 3,25 × 1,75 pulgadas, generado por `src/generar_grafico_toc.py` (`--tif` añade la versión TIFF). Lee sus valores de `outputs/resultados/resultados_congelados.json`. **Debe hacerse con código, no con IA generativa:** ACS no admite imágenes generadas con IA en este gráfico, y el verificador (grupo 7) rechaza imágenes con marcas C2PA. En otra máquina la fuente puede ser Arial en lugar de Liberation Sans, con la misma métrica.
+- **Sin fuente en el repositorio:** la figura de tipologías (mapa de calor por grupo de Ward) y la versión actual de la figura de dominios funcionales.
 - `outputs/figuras_articulo/`: **pese al nombre**, son figuras exploratorias del cuaderno.
 
 ## Instrumento

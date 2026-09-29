@@ -13,7 +13,8 @@ Comprueba, sin escribir nada:
   5. Que las codificaciones externas son las declaradas (y las plantillas estan vacias) y que la
      concordancia se reproduce desde ellas.
   6. Que preprocessing.ipynb regenera la matriz desde el crudo bit a bit.
-  7. Que ningun archivo versionado contiene nombres de fabricantes o productos.
+  7. Que ningun archivo versionado contiene nombres de fabricantes o productos, ni imagenes
+     con marcas de IA generativa (C2PA): ACS no las admite en el grafico del indice.
   8. Que src/analisis_congelado.py reproduce todos los valores de src/resultados_esperados.py.
 Sale con codigo 1 si alguna comprobacion falla.
 """
@@ -275,6 +276,16 @@ def main():
                 hallazgos.append(rel); break
     check(not hallazgos, 'ningun archivo versionado (codigo, salidas de cuadernos, datos) contiene nombres de fabricantes o productos',
           ', '.join(hallazgos))
+
+    # Marcas de procedencia de IA generativa (manifiesto C2PA o tipo de fuente IPTC) en imagenes versionadas.
+    MARCAS_IA = (b'jumdc2pa', b'c2pa.', b'trainedAlgorithmicMedia')
+    ia = []
+    for rel in filter(None, lista):
+        if rel.lower().endswith(('.png', '.jpg', '.jpeg', '.tif', '.tiff', '.gif', '.webp', '.svg', '.pdf')):
+            f = RAIZ / rel
+            if f.exists() and any(m in f.read_bytes() for m in MARCAS_IA):
+                ia.append(rel)
+    check(not ia, 'ninguna imagen versionada lleva marcas de IA generativa (C2PA)', ', '.join(ia))
 
     print('\n8. Resultados estadisticos congelados')
     import importlib.util, json

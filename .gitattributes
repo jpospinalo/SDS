@@ -3,3 +3,5 @@
 *.csv   -text
 *.xlsx  binary
 *.png   binary
+*.pdf   binary
+*.tif   binary
